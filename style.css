@@ -1,0 +1,14 @@
+@import url(//fonts.googleapis.com/css?family=Patrick+Hand+SC|Bangers|Happy+Monkey);
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+section, 
+header {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #222;
+}
