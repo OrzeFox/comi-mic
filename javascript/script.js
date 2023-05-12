@@ -1,3 +1,6 @@
+export {objects}
+export {actions}
+
 const objects = [
   "Elvis Presley",
   "Spongebob Squarepants",
