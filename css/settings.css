@@ -160,7 +160,7 @@
 
   @media only screen and (min-width: 431px) {
     .modal-content {
-      width: 80vw;
+      max-width: 600px;
       background-color: #fefefe;
       margin: 15% auto; /* 15% from the top and centered */
       padding: 2rem;
@@ -170,7 +170,7 @@
     }
   
     .modal-content h2 {
-      font-size: 2.7rem;
+      font-size: 3.7rem;
       font-family: "bangers";
       margin-bottom: 10px;
       margin-left: 5px;
@@ -182,13 +182,13 @@
       padding: 5px;
       margin-bottom: 10px;
       line-height: 1.2;
-      font-size: 1rem;
+      font-size: 1.1rem;
       text-align: justify;
       font-family: "happy monkey";
     }
     
     .modal-content li {
-      margin-bottom: 5px;
+      margin-bottom: 10px;
   
     }
     /* The Close Button */
@@ -212,9 +212,9 @@
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      border: 1px solid black;
+      border: 2px solid black;
       background-color: #f1f1f1;
-      border-radius: 5%;
+      border-radius: 7%;
     }
      
   .setting-btns {
@@ -224,75 +224,39 @@
   
   .setting-btns button {
     font-family: "bangers";
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
-  
-    /* Style the buttons that are used to open the tab content */
-    .tab-title {
-      display: block;
-      width: 100%;
-      background-color: inherit;
-      float: center;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      padding: 14px 16px;
-      transition: 0.3s;
-    }
-    
-    /* Change background color of buttons on hover */
-    .tab-title:hover {
-      background-color:#fa9939;
-    }
-    
-    /* Create an active/current tablink class */
-    .setting-tabs button.active {
-      background-color: #f3655d;
-    }
-  /* Style the tab container*/
-  
-    .tab-container {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-    }
-  
-    /* Style the tab content */
-   .tab-content {
-      display: none;
-      padding: 6px 12px;
-      width: 100%;
-      border-top: 1px solid;
-    }
-  
-    .tab-content.active {
-      display: block;
-    }
   
   
     .action-heading h1, .subject-heading h1 {
       font-family: "bangers";
-      font-size: 2rem;
+      font-size: 2.2rem;
       letter-spacing: 1px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      margin-top: 10px;
+      margin-left: 10px;
     }
   
     form {
       margin-bottom: 10px;
+      margin-left: 10px;
     }
   
     form input {
       width: 60%;
-      margin-right: 10px;
+      margin-right: 30px;
       font-family: "happy monkey";
+      height: 2rem;
+      font-size: 1.3rem;
     }
     
     form button {
       width: 30%;
       font-family: "happy monkey";
-      font-size: 0.8rem;
+      font-size: 1.3rem;
       font-weight: 500;
       letter-spacing: 1px;
+      height: 2rem;
     }
   
 
