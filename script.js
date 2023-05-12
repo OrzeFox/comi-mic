@@ -55,7 +55,7 @@ const actions = [
   "Talking",
   "Walking",
   "Climbing",
-  "Swimming",
+  "Swimming",                             
   "Hiking",
   "Boxing",
   "Kicking",
@@ -84,12 +84,12 @@ const actions = [
   "Doing hockey",
 ];
 
+const btnRestart = document.getElementById("btnRestart");
+const btn = document.getElementById("btnPlay");
+const result = document.getElementById("resultGame");
 
-const btn = document.getElementById("btn");
-const result = document.getElementById("result");
-
-let objectListGame = objects;
-let actionListGame = actions;
+let objectListGame = objects.slice();
+let actionListGame = actions.slice();
 
 function starter() {
   btn.addEventListener("click", () => {
@@ -102,7 +102,7 @@ function starter() {
 
     objectListGame.splice(randomIndex1, 1);
     actionListGame.splice(randomIndex2, 1);
-    if (objectListGame.length === 0) {
+    if (objectListGame.length === 0  || actionListGame.length === 0) {
       btn.disabled = true;
       result.innerText = `"THE END!"`;
     }
@@ -110,7 +110,10 @@ function starter() {
 }
 
 starter();
-
-btnrestart.addEventListener("click", () => {
-  location.reload();
+  
+btnRestart.addEventListener("click", () => {
+  objectListGame = objects.slice(); //hago la copia de la lista original
+  actionListGame = actions.slice();//hago la copia de la lista original
+  result.innerText = ""; //vacía el contenido del elemento HTML que muestra el resultado del juego (<div id="result"></div>), para que se borre cualquier resultado anterior y se pueda comenzar una nueva ronda del juego.
+  btn.disabled = false;
 });
