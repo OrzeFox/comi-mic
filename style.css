@@ -9,48 +9,6 @@ START // General Page/Layout
   margin: -10px;
 }
 
-section,
-header {
-  display: inline-block;
-  width: 100%;
-  height: auto;
-  border-top: 1px solid #222;
-}
-
-.inner {
-  max-width: 1003px;
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
-}
-
-.double,
-.triple,
-.double.triple {
-  max-width: 1003px;
-  display: block;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-.half {
-  width: 50%;
-}
-
-.third {
-  width: 33.33%;
-}
-
-.two-thirds {
-  width: 66.66%;
-}
-
 /* TYPOGRAPHY */
 h1,
 h2,
@@ -103,19 +61,14 @@ END // General Page/Layout
 /*===========================
 START // Top Nav Bar
 ============================*/
-#topnav {
-  background: #222;
-  width: 100%;
-  height: 75px;
-  padding: 0 1em;
+
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#topnav .logo {
-  width: 7%;
-  position: absolute;
-  padding: 1.25em;
-  background: #444;
-}
-#topnav .logo > img {
+
+/*#topnav .logo > img {
   width: 100%;
 }
 #topnav .logo:hover {
@@ -166,6 +119,7 @@ START // Top Nav Bar
   color: #222;
   border-color: #fff;
 }
+
 
 /*===========================
 END // Top Nav Bar
