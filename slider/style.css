@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background-image: url(./flat-comic-style-background-copy-space_52683-54924.avif);
+    
+  }
+  .content{
+    height: 400px;
+    width: 750px;
+    position: relative;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 20px 0px 20px black;
+  }
+  .content .images{
+    height: 80%;
+    width: 100%;
+  }
+  .content .images img{
+    height: 100%;
+    width: 100%;
+  }
+  .btm-slides{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .btm-slides span{
+    height: 30px;
+    width: 30px;
+    border: 2px solid rgb(227, 23, 23);
+    margin: 0 3px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .sliders{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border: 5px solid rgb(245, 214, 14);
+    background: rgba(14, 21, 230, 0.1);
+    border-radius: 50px;
+  }
+  .sliders:hover{
+    background: rgba(4, 246, 16, 0.2);
+  }
+  .right{
+    right: 0;
+  }
+  .sliders span{
+    line-height: 41px;
+    font-size: 35px;
+    color: rgb(19, 234, 234);
+  }
+  
