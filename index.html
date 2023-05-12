@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/settings.css">
     <title>ComiMic Mobile</title>
 </head>
 <header> 
@@ -21,8 +22,90 @@
                       </div>
                     </div>
                   </header>
-              <img src="./assets/settingsIcon.png"><li><a>Settings</a></li> 
-           
+
+
+            <!-- SETTINGS BUTTON -->  
+            <div class="settings">
+
+              <!-- TRIGGER THE SETTINGS MODAL -->
+              <button type="button" id="btn-settings" title="Settings"> <img src="./assets/settingsIcon.png"></button> 
+
+                <!-- THE MODAL -->
+              <div id="settings-modal" class="modal">
+                
+                <!-- THE MODAL CONTENT -->
+                <div class="modal-content">
+                  <div class="close-icon"><img class="close-x" src="" alt=""></div>
+                    <h2>Settings</h2>
+                      <ol>
+                        <li>You can see the available subjects and actions that are currently available in the game in their respective tabs.
+                          </li>
+                        <li>You can add your own words to the game by typing them into the box and pressing the submit button. 
+                          </li>
+                        <li>You can remove the items in the list by clicking on the word you wish to remove.
+                          </li>
+                      </ol>
+
+                <!-- TAB BUTTONS -->
+                  <div class="setting-tabs">
+                    <div class="setting-btns">
+                      <button id="btn-subject" class="tab-title active" >Subject</button>
+                      <button id="btn-action" class="tab-title" >Action</button>
+                    </div>  
+                    
+                  <!-- SUBJECT TAB CONTENT -->
+                    <div class="tab-container">
+                      <div id="tab-subject" class="tab-content active">
+                        <div class="subject-heading">
+                          <img class="tab-image" src="">
+                          <h1>Subject List</h1>
+                        </div>
+                        <form class="form">
+                          <div>
+                            <label class="form_label" for="subject-input"></label>
+                            <input class="form_input"
+                                type="text" 
+                                id="subject-input" 
+                                name="subject-input-name"
+                                required>
+                            <button class="button"><span>Submit</span></button>
+                          </div>
+                        </form>
+                        <div>
+                          <ul class="subject-list">
+                          </ul>
+                        </div>
+                      </div>
+
+                    <!-- ACTION CONTENT -->
+                    <div id="tab-action" class="tab-content">
+                      <div class="action-heading">
+                        <img class="tab-image" src="">
+                        <h1>Action List</h1>
+                      </div>
+                      <form class="form">
+                        <div>
+                          <label class="form_label" for="action-input"></label>
+                          <input class="form_input"
+                               type="text" 
+                               id="action-input" 
+                               name="action-input-name"
+                               required>
+                          <button class="button"><span>Submit</span></button>
+                        </div>
+                      </form>
+                      <div>
+                        <ul class="action-list">
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+            </div> 
             </div>
         </nav>
 </header>
@@ -32,5 +115,6 @@
 
 
     <script src="./script.js"></script>
+    <script src="javascript/settings.js"></script>
 </body>
 </html>
