@@ -1,4 +1,4 @@
-let objects = [
+const objects = [
   "Elvis Presley",
   "Spongebob Squarepants",
   "Batman",
@@ -40,10 +40,8 @@ let objects = [
   "A key",
   "A witch",
 ];
-const btn = document.getElementById("btn");
-const result = document.getElementById("result");
 
-let actions = [
+const actions = [
   "Jumping",
   "Dancing",
   "Running",
@@ -57,7 +55,7 @@ let actions = [
   "Talking",
   "Walking",
   "Climbing",
-  "Swimming",
+  "Swimming",                             
   "Hiking",
   "Boxing",
   "Kicking",
@@ -86,28 +84,36 @@ let actions = [
   "Doing hockey",
 ];
 
+const btnRestart = document.getElementById("btnRestart");
+const btn = document.getElementById("btnPlay");
+const result = document.getElementById("resultGame");
 
+let objectListGame = objects.slice();
+let actionListGame = actions.slice();
 
 function starter() {
-   
   btn.addEventListener("click", () => {
-  const randomIndex1 = Math.floor(Math.random() * objects.length);
-  const randomObject = objects[randomIndex1];
-  const randomIndex2 = Math.floor(Math.random() * actions.length);
-  const randomAction = actions[randomIndex2];
+    const randomIndex1 = Math.floor(Math.random() * objectListGame.length);
+    const randomObject = objectListGame[randomIndex1];
+    const randomIndex2 = Math.floor(Math.random() * actionListGame.length);
+    const randomAction = actionListGame[randomIndex2];
 
-  result.innerText = `You've got ${randomObject} and your action is ${randomAction}!${objects.toString()}${actions.toString()}`;
+    result.innerText = `You've got ${randomObject} and your action is ${randomAction}!`;
 
-  objects.splice(randomIndex1, 1);
-  actions.splice(randomIndex2, 1);
-  if (objects.length === 0) {
-    btn.disabled = true;
-    result.innerText = `"THE END!"`;
-
-  }
-});
-
- btnrestart.addEventListener("click", () => {
-   
- })
+    objectListGame.splice(randomIndex1, 1);
+    actionListGame.splice(randomIndex2, 1);
+    if (objectListGame.length === 0  || actionListGame.length === 0) {
+      btn.disabled = true;
+      result.innerText = `"THE END!"`;
+    }
+  });
 }
+
+starter();
+  
+btnRestart.addEventListener("click", () => {
+  objectListGame = objects.slice(); //hago la copia de la lista original
+  actionListGame = actions.slice();//hago la copia de la lista original
+  result.innerText = ""; //vacía el contenido del elemento HTML que muestra el resultado del juego (<div id="result"></div>), para que se borre cualquier resultado anterior y se pueda comenzar una nueva ronda del juego.
+  btn.disabled = false;
+});
