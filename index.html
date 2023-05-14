@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/settings.css">
-    <link rel="stylesheet" href="styleDraw.css">
+    <link rel="stylesheet" href="css/list.css">
+   <!--  <link rel="stylesheet" href="styleDraw.css"> -->
     <title>ComiMic Mobile</title>
 </head>
 <header> 
@@ -63,13 +64,13 @@
                         </div>
                         <form class="form">
                           <div>
-                            <label class="form_label" for="subject-input"></label>
-                            <input class="form_input"
+                            <label class="subject-form_label" for="subject-input"></label>
+                            <input class="subject-input"
                                 type="text" 
                                 id="subject-input" 
                                 name="subject-input-name"
                                 required>
-                            <button class="button"><span>Submit</span></button>
+                            <button id="submit-subject" class="button"><span>Submit</span></button>
                           </div>
                         </form>
                         <div>
@@ -86,13 +87,13 @@
                       </div>
                       <form class="form">
                         <div>
-                          <label class="form_label" for="action-input"></label>
-                          <input class="form_input"
+                          <label class="action-form-label" for="action-input"></label>
+                          <input class="action-input"
                                type="text" 
                                id="action-input" 
                                name="action-input-name"
                                required>
-                          <button class="button"><span>Submit</span></button>
+                          <button id="submit-action" class="button"><span>Submit</span></button>
                         </div>
                       </form>
                       <div>
@@ -117,8 +118,8 @@
       <button id="btn">PLAY</button>
       <button id ="btnrestart">RESTART</button>
       
-  
-    <script src="./script.js"></script>
-    <script src="javascript/settings.js"></script>
+    <script type="module" src="./javascript/list.js"></script>
+    <script type="module" src="./javascript/script.js"></script>
+    <script type="module" src="./javascript/settings.js"></script>
 </body>
 </html>

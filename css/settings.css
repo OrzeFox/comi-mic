@@ -26,7 +26,7 @@
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 2rem;
-    box-shadow: 5px 5px #038ecf;
+    box-shadow: 5px 5px #ffce55;
     border: 2px solid black;
     border-radius: 10%; /* Could be more or less, depending on screen size */
   }
@@ -36,6 +36,7 @@
     font-family: "bangers";
     margin-bottom: 10px;
     margin-left: 5px;
+    text-shadow: 3px 3px #ffce55;
   }
 
   .modal-content ol {
@@ -155,6 +156,7 @@
     font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 1px;
+    margin-left: -10px;
   }
 
   /* BIGGER SCREEN STYLING */
@@ -165,12 +167,13 @@
       background-color: #fefefe;
       margin: 15% auto; /* 15% from the top and centered */
       padding: 2rem;
-      box-shadow: 5px 5px #038ecf;
+      box-shadow: 5px 5px #ffce55;
       border: 2px solid black;
       border-radius: 10%; /* Could be more or less, depending on screen size */
     }
   
     .modal-content h2 {
+      font-size: 3.7rem;
       font-size: 3.7rem;
       font-family: "bangers";
       margin-bottom: 10px;
@@ -183,7 +186,7 @@
       padding: 5px;
       margin-bottom: 10px;
       line-height: 1.2;
-      font-size: 1.1rem;
+      font-size: 1.1.1rem;
       text-align: justify;
       font-family: "happy monkey";
     }
@@ -258,7 +261,40 @@
       font-weight: 500;
       letter-spacing: 1px;
       height: 2rem;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+      outline: none;
+      border-radius: 5px;
+      z-index: 0;
+      background: #fff;
+      overflow: hidden;
+      border: 2px solid black;
+      color: black;
+    }
+
+    form button:hover {
+      color: #fff;
+      border: #ffce55
+      height: 2rem;
     }
   
 
+  }
+    form button:hover:after {
+      width: 100%;
+    
+   }
+  
+    form button:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #ffce55;
+   ;
   }

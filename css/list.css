@@ -1,0 +1,76 @@
+div .action-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 1px;
+}
+
+.action-list {
+    text-align: center;
+}
+
+div .action-list li {
+    margin:0px;
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 431px) {
+    div .action-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        gap: 1px;
+    }
+    
+    .action-list {
+        text-align: center;
+    }
+    
+    div .action-list li {
+        margin:0px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        padding: 2px 2px;
+        
+    }
+}
+
+ /* SUBJECT LIST STYLING */
+
+div .subject-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.subject-list {
+
+    text-align: center;
+}
+
+div .subject-list li {
+    margin:0px;
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 431px) {
+    div .subject-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        
+    }
+    
+    .subject-list {
+     
+        text-align: center;
+    }
+    
+    div .subject-list li {
+        margin:0px;
+        font-size: 1.3rem;
+        font-weight: 500;
+       
+        
+    }
+}
