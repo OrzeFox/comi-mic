@@ -1,124 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/settings.css">
-    
-    <title>ComiMic Mobile</title>
-</head>
-<header> 
-        <nav>
-            <div class="nav">
-                <header class="main panel red">
-                    <div class="inner">
-                      <div class="left">
-                        <h1 class="big">¡ComiMic!</h1>
-                       
-                      </div>
-                      <div class="right">
-                
-                      </div>
-                    </div>
-                  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Social media footer -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/settings.css" />
+    <link rel="stylesheet" href="css/list.css" />
+    <!-- Preload Fonts -->
+    <link
+      rel="preload"
+      href="/assets/fonts/Bangers-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/HappyMonkey-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+    <title>Comimic</title>
+  </head>
 
+  <header class="main panel red">
+    <nav>
+      <div class="nav">
+        <ul class="header-container">
+          <li class="logo-comimic">
+            <img
+              id="logo-comimic"
+              src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684000989/random/comimic_kk7ny1.svg"
+            />
+          </li>
+          <li class="settings-btn">
+            <button type="button" id="btn-settings" title="Settings">
+              <img
+                id="btn-settings-image"
+                src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684001574/random/Group_33_oerzsh.png"
+              />
+            </button>
+          </li>
+        </ul>
 
-            <!-- SETTINGS BUTTON -->  
-            <div class="settings">
+        <!-- SETTINGS BUTTON -->
+        <div class="settings">
+          <!-- TRIGGER THE SETTINGS MODAL -->
+          <!-- <button type="button" id="btn-settings" title="Settings"> <img class src="./assets/settingsIcon.png"></button> -->
 
-              <!-- TRIGGER THE SETTINGS MODAL -->
-              <button type="button" id="btn-settings" title="Settings"> <img class src="./assets/settingsIcon.png"></button> 
-
-                <!-- THE MODAL -->
-              <div id="settings-modal" class="modal">
-                
-                <!-- THE MODAL CONTENT -->
-                <div class="modal-content">
-                  <div class="close-icon"><img class="close-x" src="" alt=""></div>
-                    <h2>Settings</h2>
-                      <ol>
-                        <li>You can see the available subjects and actions that are currently available in the game in their respective tabs.
-                          </li>
-                        <li>You can add your own words to the game by typing them into the box and pressing the submit button. 
-                          </li>
-                        <li>You can remove the items in the list by clicking on the word you wish to remove.
-                          </li>
-                      </ol>
-
-                <!-- TAB BUTTONS -->
-                  <div class="setting-tabs">
-                    <div class="setting-btns">
-                      <button id="btn-subject" class="tab-title active" >Subject</button>
-                      <button id="btn-action" class="tab-title" >Action</button>
-                    </div>  
-                    
-                  <!-- SUBJECT TAB CONTENT -->
-                    <div class="tab-container">
-                      <div id="tab-subject" class="tab-content active">
-                        <div class="subject-heading">
-                          <img class="tab-image" src="">
-                          <h1>Subject List</h1>
-                        </div>
-                        <form class="form">
-                          <div>
-                            <label class="form_label" for="subject-input"></label>
-                            <input class="form_input"
-                                type="text" 
-                                id="subject-input" 
-                                name="subject-input-name"
-                                required>
-                            <button class="button"><span>Submit</span></button>
-                          </div>
-                        </form>
-                        <div>
-                          <ul class="subject-list">
-                          </ul>
-                        </div>
-                      </div>
-
-                    <!-- ACTION CONTENT -->
-                    <div id="tab-action" class="tab-content">
-                      <div class="action-heading">
-                        <img class="tab-image" src="">
-                        <h1>Action List</h1>
-                      </div>
-                      <form class="form">
-                        <div>
-                          <label class="form_label" for="action-input"></label>
-                          <input class="form_input"
-                               type="text" 
-                               id="action-input" 
-                               name="action-input-name"
-                               required>
-                          <button class="button"><span>Submit</span></button>
-                        </div>
-                      </form>
-                      <div>
-                        <ul class="action-list">
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          <!-- THE MODAL -->
+          <div id="settings-modal" class="modal">
+            <!-- THE MODAL CONTENT -->
+            <div class="modal-content">
+              <div class="close-icon">
+                <img class="close-x" src="" alt="" />
               </div>
-            </div>
-          </div>
-  
-            </div> 
-            </div>
-        </nav>
-</header>
-<body> 
-  
-      <h1>Ready?</h1>
-      <p id="resultGame"></p>
-      <button id="btnPlay">PLAY</button>
-      <button id ="btnRestart">RESTART</button>
-      
-  
-    <script src="./script.js"></script>
-    <script src="javascript/settings.js"></script>
-</body>
+              <h2>Settings</h2>
+              <ol>
+                <li>
+                  You can see the available subjects and actions that are
+                  currently available in the game in their respective tabs.
+                </li>
+                <li>
+                  You can add your own words to the game by typing them into the
+                  box and pressing the submit button.
+                </li>
+                <li>
+                  You can remove the items in the list by clicking on the word
+                  you wish to remove.
+                </li>
+              </ol>
+
+              <!-- TAB BUTTONS -->
+              <div class="setting-tabs">
+                <div class="setting-btns">
+                  <button id="btn-subject" class="tab-title active">
+                    Subject
+                  </button>
+                  <button id="btn-action" class="tab-title">Action</button>
+                </div>
+
+                <!-- SUBJECT TAB CONTENT -->
+                <div class="tab-container">
+                  <div id="tab-subject" class="tab-content active">
+                    <div class="subject-heading">
+                      <h1>Subject List</h1>
+                    </div>
+                    <form class="form">
+                      <div>
+                        <label
+                          class="subject-form_label"
+                          for="subject-input"
+                        ></label>
+                        <input
+                          class="subject-input"
+                          type="text"
+                          id="subject-input"
+                          name="subject-input-name"
+                          required
+                        />
+                        <button id="submit-subject" class="button">
+                          <span>Submit</span>
+                        </button> 
+                      </div> <!-- subject submit input and button div -->
+                    </form>
+                    <div>
+                      <ul class="subject-list"></ul>
+                    </div> <!-- closing subject list ul div -->
+                  </div>
+
+                  <!-- ACTION CONTENT -->
+                  <div id="tab-action" class="tab-content">
+                    <div class="action-heading">
+                      <h1>Action List</h1>
+                    </div>
+                    <form class="form">
+                      <div>
+                        <label class="form_label" for="action-input"></label>
+                        <input
+                          class="form_input"
+                          type="text"
+                          id="action-input"
+                          name="action-input-name"
+                          required
+                        />
+                        <button id="submit-action" class="button">
+                          <span>Submit</span>
+                        </button>
+                      </div> <!-- action submit input and button div -->
+                    </form>
+                    <div>
+                      <ul class="action-list"></ul>
+                    </div> <!-- closing action list ul div -->
+                  </div> <!-- closing action tab tag -->
+                </div> <!-- closing tab container tag -->
+              </div>  <!-- closing setting tabs tag -->
+            </div> <!-- closing modal content tag -->
+          </div> <!-- closing settings modal tag -->
+        </div> <!-- closing settings div tag -->
+      </div> <!-- Closing nav div tag -->
+    </nav>
+  </header>
+  <body>
+    <h1>Ready?</h1>
+    <p id="resultGame"></p>
+    <button id="btnPlay">PLAY</button>
+    <button id="btnRestart">RESTART</button>
+
+    <div class="board-game">
+      <div class="screen">
+        <h2 class="ready-txt"></h2>
+        <button class="play-btn"></button>
+        <button class="timer"></button>
+      </div>
+
+      <button class="board-btns">done</button>
+      <button class="board-btns">skip</button>
+      <button class="board-btns">cancel</button>
+    </div>
+
+    <!------------ FOOTER----------->
+    <footer>
+      <div class="foot-container">
+        <div class="copyright">
+          <p>&copy; COMIMIC DIGITAL 2023</p>
+        </div>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-twitter" title="twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram" title="instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook" title="Facebook"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./javascript/list.js"></script>
+    <script type="module" src="./javascript/script.js"></script>
+    <script type="module" src="./javascript/settings.js"></script>
+  </body>
 </html>

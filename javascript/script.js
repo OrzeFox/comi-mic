@@ -1,3 +1,6 @@
+export {objects}
+export {actions}
+
 const objects = [
   "Elvis Presley",
   "Spongebob Squarepants",
@@ -55,7 +58,7 @@ const actions = [
   "Talking",
   "Walking",
   "Climbing",
-  "Swimming",                             
+  "Swimming",
   "Hiking",
   "Boxing",
   "Kicking",
@@ -84,36 +87,33 @@ const actions = [
   "Doing hockey",
 ];
 
-const btnRestart = document.getElementById("btnRestart");
-const btn = document.getElementById("btnPlay");
-const result = document.getElementById("resultGame");
 
-let objectListGame = objects.slice();
-let actionListGame = actions.slice();
+const btnPlay = document.getElementById("btnPlay");
+const resultGame = document.getElementById("resultGame");
+
+let objectListGame = objects;
+let actionListGame = actions;
 
 function starter() {
-  btn.addEventListener("click", () => {
+  btnPlay.addEventListener("click", () => {
     const randomIndex1 = Math.floor(Math.random() * objectListGame.length);
     const randomObject = objectListGame[randomIndex1];
     const randomIndex2 = Math.floor(Math.random() * actionListGame.length);
     const randomAction = actionListGame[randomIndex2];
 
-    result.innerText = `You've got ${randomObject} and your action is ${randomAction}!`;
+    resultGame.innerText = `You've got ${randomObject} and your action is ${randomAction}!`;
 
     objectListGame.splice(randomIndex1, 1);
     actionListGame.splice(randomIndex2, 1);
-    if (objectListGame.length === 0  || actionListGame.length === 0) {
-      btn.disabled = true;
-      result.innerText = `"THE END!"`;
+    if (objectListGame.length === 0) {
+      btnPlay.disabled = true;
+      resultGame.innerText = `"THE END!"`;
     }
   });
 }
 
 starter();
-  
+
 btnRestart.addEventListener("click", () => {
-  objectListGame = objects.slice(); //hago la copia de la lista original
-  actionListGame = actions.slice();//hago la copia de la lista original
-  result.innerText = ""; //vacía el contenido del elemento HTML que muestra el resultado del juego (<div id="result"></div>), para que se borre cualquier resultado anterior y se pueda comenzar una nueva ronda del juego.
-  btn.disabled = false;
+  location.reload();
 });

@@ -27,7 +27,7 @@ ol {
   color: #222;
 }
 
-.blue {
+/* .blue {
   color: #51cbf1;
 }
 
@@ -53,7 +53,7 @@ ol {
 
 .red {
   color: #f3655d;
-}
+} */
 
 /*===========================
 END // General Page/Layout
@@ -62,11 +62,11 @@ END // General Page/Layout
 START // Top Nav Bar
 ============================*/
 
-.nav{
+/* .nav{
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /*#topnav .logo > img {
   width: 100%;
@@ -129,7 +129,7 @@ START // Comic (Dot) Panels
 Original by @ashandrien | Comic Book Half Tone Background | https://codepen.io/ashandrien/pen/rnzsd
 ============================*/
 .panel {
-  padding: 1em;
+  /* padding: 1em; */
   background-size: 8px 8px, 8px 8px, 8px 8px, 8px 8px, 8px 8px, 100% 100%;
   border-top: 3px solid #444;
   margin-bottom: -4px;
@@ -272,7 +272,7 @@ Original by @beyondSimple | Comic style panes | https://codepen.io/beyondSimple/
 .comic .double .comic-pane .text::before,
 .comic .triple.double .comic-pane .text::before {
   content: "";
-  dislay: block;
+  display: block;
   position: absolute;
   height: 100%;
   width: 4em;
