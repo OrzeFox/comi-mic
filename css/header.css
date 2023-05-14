@@ -1,0 +1,48 @@
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 450px) {
+    /*----------- Reset------------- */
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .header-container {
+        min-width: 320px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 1rem .5rem;
+        background-color: #484848;
+        position: relative;
+    }
+
+    .header-container li {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+
+    #logo-comimic {
+        width: 8rem;
+        height: auto;
+        padding-left: 1rem;
+    }
+
+    #btn-settings {
+        width: 6rem;
+        height: auto;
+        padding-right: 1rem;
+    }
+
+
+
+    .settings-btn button {
+        border:none;
+        background-color: transparent;
+    }
+}

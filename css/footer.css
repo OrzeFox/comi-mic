@@ -1,0 +1,40 @@
+/* MEDIA QUERIES */
+@media only screen and (max-width: 450px) {
+    /*----------- Reset------------- */
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-family: 'Happy monkey', sans-serif;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .foot-container {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem 4rem;
+        background-color: #484848;
+        color: #ffff;
+        font-size: 1rem;
+    }
+
+    .fab {
+    color: #FFFFFF;
+    }
+}
+

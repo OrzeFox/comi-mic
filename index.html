@@ -4,27 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/settings.css">
-    <link rel="stylesheet" href="css/list.css">
-   <!--  <link rel="stylesheet" href="styleDraw.css"> -->
-    <title>ComiMic Mobile</title>
+    <!-- Social media footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Style CSS -->
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/footer.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/settings.css">
+   <link rel="stylesheet" href="css/list.css">
+     <!-- Preload Fonts -->
+  <link
+    rel="preload"
+    href="/assets/fonts/Bangers-Regular.ttf"
+    as="font"
+    type="font/ttf"
+    crossOrigin="anonymous">
+  </link>
+  <link
+    rel="preload"
+    href="/assets/fonts/HappyMonkey-Regular.ttf"
+    as="font"
+    type="font/ttf"
+    crossOrigin="anonymous">
+  </link>
+   <title>Comimic</title>
 </head>
 
   <header class="main panel red"> 
           <nav>
               <div class="nav">
-                      <div class="inner">
-                        <div class="left">
-                          <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684000989/random/comimic_kk7ny1.svg" alt="comimic logo">
-                        
-                        </div>
-                        <div class="right">
-                          <button type="button" id="btn-settings" title="Settings">
-                            <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684000989/random/setting_img_fgbsws.svg" alt="settings icon">
-                          </button>
-                        </div> 
-
+                <ul class="header-container">
+                  <li class="logo-comimic">
+                      <img id="logo-comimic" src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684000989/random/comimic_kk7ny1.svg">
+                  </li>
+                  <li class="settings-btn">
+                      <button type="button" id="btn-settings" title="Settings">
+                          <img id="btn-settings" src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684001574/random/Group_33_oerzsh.png">
+                      </button>
+                  </li>
+              </ul>
 
             <!-- SETTINGS BUTTON -->  
             <div class="settings">
@@ -125,6 +143,20 @@
       <button class="board-btns">skip</button>
       <button class="board-btns">cancel</button> 
     </div>
+
+     <!-- ---------- FOOTER--------- -->
+     <footer>
+      <div class="foot-container">
+          <div class="copyright">
+              <p>&copy; COMIMIC DIGITAL 2023</p>
+          </div>
+          <div class="social-media">
+              <a href="#"><i class="fab fa-twitter" title="twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram" title="instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook" title="Facebook"></i></a>
+          </div>
+      </div>
+  </footer>
 
     <script type="module" src="./javascript/list.js"></script>
     <script type="module" src="./javascript/script.js"></script>
