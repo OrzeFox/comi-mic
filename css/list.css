@@ -1,36 +1,35 @@
 div .action-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 1px;
-}
-
-.action-list {
-    text-align: center;
+    grid-template-columns: 1fr;
+    text-align: left;
+    height:200px;
+    gap: 5px;
+    overflow-y: scroll;
 }
 
 div .action-list li {
     margin:0px;
+    margin-top: 10px;
     font-size: 0.9rem;
+    margin-left: 50px;
+    list-style-type: circle;
 }
 
 @media screen and (min-width: 431px) {
     div .action-list {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(10, 1fr);
-        gap: 1px;
-    }
-    
-    .action-list {
-        text-align: center;
+        grid-template-columns: 1fr;
+        gap: 5px;
+        text-align: left;
     }
     
     div .action-list li {
         margin:0px;
         font-size: 1.3rem;
         font-weight: 500;
-        padding: 2px 2px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        list-style-type: circle;
         
     }
 }
@@ -39,38 +38,37 @@ div .action-list li {
 
 div .subject-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-}
+    grid-template-columns: 1fr;
+    text-align: left;
+    height:200px;
+    gap: 5px;
+    overflow-y: scroll;
 
-.subject-list {
-
-    text-align: center;
 }
 
 div .subject-list li {
     margin:0px;
+    margin-top: 10px;
     font-size: 0.9rem;
+    margin-left: 50px;
+    list-style-type: circle;
+   
 }
 
 @media screen and (min-width: 431px) {
     div .subject-list {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(10, 1fr);
-        
+        grid-template-columns: 1fr;
+        text-align: left;
     }
     
-    .subject-list {
-     
-        text-align: center;
-    }
     
     div .subject-list li {
         margin:0px;
         font-size: 1.3rem;
         font-weight: 500;
-       
-        
+        margin-left: 50px;
+        list-style-type: circle;
+        margin-bottom: 10px;
     }
 }

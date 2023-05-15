@@ -7,7 +7,7 @@ const modal = document.getElementById("settings-modal");
 const btnSettings = document.getElementById("btn-settings");
 
 // Get the <span> element that closes the modal
-const btnClose = document.getElementsByClassName("close-x")[0];
+const btnClose = document.getElementsByClassName("fa-xmark")[0];
 
 // When the user clicks on the button, open the modal
 btnSettings.onclick = function() {
@@ -25,7 +25,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
 
 /* TAB SWITCH */
 
@@ -52,5 +51,4 @@ function tabSwitch (){
 }
 
 tabSwitch()
-
 
