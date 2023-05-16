@@ -12,31 +12,50 @@ import {actions} from './script.js'
   const subjectList = document.querySelector(".subject-list"); // use querySelector to get the list element
   const actionList = document.querySelector(".action-list");
 
+// SUBJECT LIST CREATION
 
-/* SUBJECT LIST */
-
-  subjectSubmit.addEventListener("click", () => {
-    const newSubjectWord = subjectInput.value;
-    if (newSubjectWord !== "") {
-      objects.push(newSubjectWord);
-      updateSubjects();
-      subjectInput.value = "";
+  subjectSubmit.addEventListener("click", (event) => {
+    event.preventDefault()
+    addNewSubject();
+  });
+  
+  subjectInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault(); // Prevent form submission
+      addNewSubject();
     }
   });
   
+  function addNewSubject() {
+    const newSubjectWord = subjectInput.value;
+    if (newSubjectWord !== "") {
+      objects.unshift(newSubjectWord);
+      updateSubjects();
+      subjectInput.value = "";
+    }
+  }
+  
   subjectList.addEventListener("click", (event) => {
-    const addToArray = Array.from(subjectList.children).indexOf(event.target);
-    if (addToArray !== -1) {
-      objects.splice(addToArray, 1);
+    if (event.target.classList.contains("remove-button")) {
+      const removeIndex = parseInt(event.target.dataset.index, 10);
+      objects.splice(removeIndex, 1);
       updateSubjects();
     }
   });
   
   function updateSubjects() {
     subjectList.innerHTML = "";
+  
     for (let i = 0; i < objects.length; i++) {
       const addedSubjectItem = document.createElement("li");
       addedSubjectItem.textContent = objects[i];
+  
+      const removeButton = document.createElement("button");
+      removeButton.textContent = "x";
+      removeButton.classList.add("remove-button");
+      removeButton.dataset.index = i;
+  
+      addedSubjectItem.appendChild(removeButton);
       subjectList.appendChild(addedSubjectItem);
     }
   }
@@ -44,33 +63,54 @@ import {actions} from './script.js'
   updateSubjects()
 
 
-/* ACTIONS LIST */
+// ACTIONS LIST CREATION
 
-  actionSubmit.addEventListener("click", () => {
-    const newActionWord = actionInput.value;
-    if (newActionWord !== "") {
-      actions.push(newActionWord);
-      updateActions();
-      actionInput.value = "";
-    }
-  });
-  
-  actionList.addEventListener("click", (event) => {
-    const addToArray = Array.from(actionList.children).indexOf(event.target);
-    if (addToArray !== -1) {
-      actions.splice(addToArray, 1);
-      updateActions();
-    }
-  });
-  
-  function updateActions() {
-    actionList.innerHTML = "";
-    for (let i = 0; i < actions.length; i++) {
-      const addedActionItem = document.createElement("li");
-      addedActionItem.textContent = actions[i];
-      actionList.appendChild(addedActionItem);
-    }
+actionSubmit.addEventListener("click", (event) => {
+  event.preventDefault();
+  addNewAction();
+});
+
+actionInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault(); // Prevent form submission
+    addNewAction();
   }
+});
+
+function addNewAction() {
+  const newActionWord = actionInput.value;
+  if (newActionWord !== "") {
+    actions.unshift(newActionWord);
+    updateActions();
+    actionInput.value = "";
+  }
+}
+
+actionList.addEventListener("click", (event) => {
+  if (event.target.classList.contains("remove-button")) {
+    const removeIndex = parseInt(event.target.dataset.index, 10);
+    actions.splice(removeIndex, 1);
+    updateActions();
+  }
+});
+
+function updateActions() {
+  actionList.innerHTML = "";
+
+  for (let i = 0; i < actions.length; i++) {
+    const addedActionItem = document.createElement("li");
+    addedActionItem.textContent = actions[i];
+
+    const removeButton = document.createElement("button");
+    removeButton.textContent = "x";
+    removeButton.classList.add("remove-button");
+    removeButton.dataset.index = i;
+
+    addedActionItem.appendChild(removeButton);
+    actionList.appendChild(addedActionItem);
+  }
+}
+
 
 updateActions()
 
