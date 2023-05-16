@@ -25,18 +25,20 @@
     width: 80vw;
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
-    padding: 2rem;
-    box-shadow: 5px 5px #ffce55;
+    padding: 1rem;
+    /* box-shadow: 5px 5px #ffce55; */
     border: 2px solid black;
-    border-radius: 10%; /* Could be more or less, depending on screen size */
+    border-radius: 3%; /* Could be more or less, depending on screen size */
   }
 
   .modal-content h2 {
-    font-size: 2.7rem;
+    font-size: 2.4rem;
     font-family: "bangers";
+    margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 5px;
     text-shadow: 3px 3px #ffce55;
+    text-align: center;
   }
 
   .modal-content ol {
@@ -45,7 +47,7 @@
     padding: 5px;
     margin-bottom: 10px;
     line-height: 1.2;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: justify;
     font-family: "happy monkey";
   }
@@ -55,20 +57,15 @@
 
   }
   /* The Close Button */
-  .close-x {
-    color: #aaa;
+  .fa-xmark {
     float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close-x:hover,
-  .close-x:focus {
-    color: black;
-    text-decoration: none;
+    color: #000000;
     cursor: pointer;
   }
-
+  
+  .fa-xmark:hover {
+    color: #910f0f; /* Change color on hover if desired */
+  }
 
   /* Style the tab */
 .setting-tabs {
@@ -99,7 +96,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 10px 5px;
     transition: 0.3s;
   }
   
@@ -112,6 +109,12 @@
   .setting-tabs button.active {
     background-color: #f3655d;
   }
+
+  /* Create a deactive tablink */
+  .setting-tabs button:not(.active) {
+    color: #acacac;
+  }
+
 /* Style the tab container*/
 
   .tab-container {
@@ -135,9 +138,11 @@
 
   .action-heading h1, .subject-heading h1 {
     font-family: "bangers";
-    font-size: 2rem;
+    font-size: 1.1rem;
     letter-spacing: 1px;
+    margin-top: 10px;
     margin-bottom: 10px;
+    text-align: center;
   }
 
   form {
@@ -146,24 +151,65 @@
 
   form input {
     width: 60%;
-    margin-right: 10px;
+    margin-right: 15px;
     font-family: "happy monkey";
+    
   }
   
-  form button {
+  #submit-subject, #submit-action {
     width: 30%;
     font-family: "happy monkey";
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 500;
     letter-spacing: 1px;
-    margin-left: -10px;
+    margin-left: -7px;
   }
+
+  #submit-subject, #submit-action {
+    width: 35%;
+    font-family: "happy monkey";
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 3px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 1px solid black;
+    color: black;
+  }
+
+  #submit-subject:hover, #submit-action:hover {
+    color: #fff;
+    border: #ffce55;
+
+  }
+
+  #submit-subject:hover:after, #submit-action:hover:after {
+      width: 100%;
+  }
+
+ #submit-subject::after, #submit-action:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #ffce55;
+ ;
+}
 
   /* BIGGER SCREEN STYLING */
 
   @media only screen and (min-width: 431px) {
     .modal-content {
-      max-width: 600px;
+      max-width: 500px;
       background-color: #fefefe;
       margin: 15% auto; /* 15% from the top and centered */
       padding: 2rem;
@@ -186,7 +232,7 @@
       padding: 5px;
       margin-bottom: 10px;
       line-height: 1.2;
-      font-size: 1.1.1rem;
+      font-size: 1.1rem;
       text-align: justify;
       font-family: "happy monkey";
     }
@@ -202,15 +248,11 @@
       font-size: 28px;
       font-weight: bold;
     }
-    
-    .close-x:hover,
-    .close-x:focus {
-      color: black;
-      text-decoration: none;
-      cursor: pointer;
-    }
-  
-  
+   
+  .fa-xmark {
+    font-size: 2rem;
+  }
+
     /* Style the tab */
   .setting-tabs {
       display: flex;
@@ -254,7 +296,7 @@
       font-size: 1.3rem;
     }
     
-    form button {
+    #submit-subject, #submit-action {
       width: 30%;
       font-family: "happy monkey";
       font-size: 1.3rem;
@@ -273,7 +315,7 @@
       color: black;
     }
 
-    form button:hover {
+    #submit-subject:hover, #submit-action:hover {
       color: #fff;
       border: #ffce55;
       height: 2rem;
@@ -281,12 +323,11 @@
   
 
   }
-    form button:hover:after {
+  #submit-subject:hover:after, #submit-action:hover:after {
       width: 100%;
-    
    }
   
-    form button:after {
+   #submit-subject::after, #submit-action:after {
     content: "";
     position: absolute;
     z-index: -1;
