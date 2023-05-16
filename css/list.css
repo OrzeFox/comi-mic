@@ -11,28 +11,23 @@ div .action-list li {
     margin:0px;
     margin-top: 10px;
     font-size: 0.9rem;
-    margin-left: 50px;
+    margin-left: 15px;
     list-style-type: circle;
 }
 
-@media screen and (min-width: 431px) {
-    div .action-list {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 5px;
-        text-align: left;
-    }
-    
-    div .action-list li {
-        margin:0px;
-        font-size: 1.3rem;
-        font-weight: 500;
-        margin-left: 50px;
-        margin-bottom: 10px;
-        list-style-type: circle;
-        
-    }
+/* REMOVE BUTTON DESIGN */
+
+.remove-button{
+    float: right;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
  /* SUBJECT LIST STYLING */
 
@@ -50,10 +45,12 @@ div .subject-list li {
     margin:0px;
     margin-top: 10px;
     font-size: 0.9rem;
-    margin-left: 50px;
+    margin-left: 15px;
     list-style-type: circle;
    
 }
+
+/* DESKTOP STYLING */
 
 @media screen and (min-width: 431px) {
     div .subject-list {
@@ -67,8 +64,37 @@ div .subject-list li {
         margin:0px;
         font-size: 1.3rem;
         font-weight: 500;
-        margin-left: 50px;
+        margin-left: 30px;
         list-style-type: circle;
         margin-bottom: 10px;
     }
+
+    div .action-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+        text-align: left;
+    }
+    
+    div .action-list li {
+        margin:0px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        list-style-type: circle;
+        
+    }
+
+    .remove-button{
+        float: right;
+        margin-right: 20px;
+        width: 25px;
+        height: 25px;
+        font-size: large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
