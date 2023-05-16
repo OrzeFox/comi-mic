@@ -13,7 +13,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 1.5rem 1rem .5rem;
-        background-color: #484848;
+        background-color: #ffce55;
         position: relative;
     }
 
@@ -38,8 +38,6 @@
         height: auto;
         padding-right: 1rem;
     }
-
-
 
     .settings-btn button {
         border:none;
