@@ -26,9 +26,8 @@
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 1rem;
-    /* box-shadow: 5px 5px #ffce55; */
     border: 2px solid black;
-    border-radius: 3%; /* Could be more or less, depending on screen size */
+    border-radius: 3px; /* Could be more or less, depending on screen size */
   }
 
   .modal-content h2 {
@@ -63,9 +62,6 @@
     cursor: pointer;
   }
   
-  .fa-xmark:hover {
-    color: #910f0f; /* Change color on hover if desired */
-  }
 
   /* Style the tab */
 .setting-tabs {
@@ -162,7 +158,6 @@
     font-size: 0.9rem;
     font-weight: 500;
     letter-spacing: 1px;
-    margin-left: -7px;
   } */
 
   #submit-subject, #submit-action {
@@ -180,6 +175,7 @@
     overflow: hidden;
     border: 1px solid black;
     color: black;
+    margin-left: -7px;
   }
 
   #submit-subject:hover, #submit-action:hover {
@@ -213,9 +209,8 @@
       background-color: #fefefe;
       margin: 15% auto; /* 15% from the top and centered */
       padding: 2rem;
-      box-shadow: 5px 5px #ffce55;
       border: 2px solid black;
-      border-radius: 10%; /* Could be more or less, depending on screen size */
+      border-radius: 3px; /* Could be more or less, depending on screen size */
     }
   
     .modal-content h2 {
