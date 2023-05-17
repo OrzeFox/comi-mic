@@ -15,14 +15,11 @@ let actionListGame = actions;
 // Ocultar challengeDisplay inicialmente
 challengeDisplay.style.display = 'none';
 
+
 // Evento "Ready"
 btnPlay.addEventListener('click', function() {
-  // Ocultar a seção readyDisplay
   readyDisplay.style.display = 'none';
-  // Exibir a seção challengeDisplay
   challengeDisplay.style.display = 'block';
-
-  // Gerar um desafio aleatório
   generateRandomChallenge();
 });
 
@@ -44,6 +41,8 @@ function generateRandomChallenge() {
   }
 }
 
+
+
 // Btn "Finish"
 btnFinish.addEventListener('click', () => {
 
@@ -51,12 +50,13 @@ btnFinish.addEventListener('click', () => {
   readyDisplay.style.justifyContent = 'center';
   readyDisplay.style.alignItems = 'center';
   challengeDisplay.style.display = 'none';
+
+  location.reload();
   
 });
 
 // Btn "Next"
 btnNext.addEventListener('click', () => {
-  // Gerar um novo desafio aleatório
   generateRandomChallenge();
 });
 
