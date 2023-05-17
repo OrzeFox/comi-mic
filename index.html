@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/ruleset.css">
     <link rel="stylesheet" href="css/settings.css" />
     <link rel="stylesheet" href="css/list.css" />
     <link rel="stylesheet" href="css/boardGame.css">
@@ -75,17 +76,20 @@
     </div>
 
       <!-- SECTION RULESET -->
-        <section id="ruleset-modal" class="modal">
+        <div id="ruleset-modal" class="modal-ruleset">
+          <div class="modal-content-ruleset">        
+            <i class="fa-solid fa-xmark fa-md close-ruleset" style="color: #000000;"></i>
           <h1>ABOUT THE GAME</h1>
           <p>You have to do an action while imitating an animal, a person or an object that are generated randomly as pairings while other players try to guess both of the words! </p>
           <h1>RULESET</h1>
             <ol>
-              <li> the player who is doing the challenge can see the word pairing.</li>
-              <li></li>The player has to do the action while imitating the subject, it is not allowed to do the imitation and the action separately.</li>
-              <li></li>The guessing players have to say both the subject and the action to make a correct guess.</li>
-              <li></li>The playing order can be decided among the players.</li>
+              <li>The player who is doing the challenge can see the word pairing.</li>
+              <li>The player has to do the action while imitating the subject, it is not allowed to do the imitation and the action separately.</li>
+              <li>The guessing players have to say both the subject and the action to make a correct guess.</li>
+              <li>The playing order can be decided among the players.</li>
             </ol>
-        </section>
+           </div> 
+        </div>
 
         <!-- SECTION SETTINGS -->
         <div class="settings">
@@ -96,7 +100,7 @@
           <div id="settings-modal" class="modal">
             <!-- THE MODAL CONTENT -->
             <div class="modal-content">        
-                <i class="fa-solid fa-xmark fa-md" style="color: #000000;"></i>
+                <i class="fa-solid fa-xmark fa-md close-settings" style="color: #000000;"></i>
               <h2>Settings</h2>
               <ol>
                 <li>
@@ -234,9 +238,11 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="javascript/boardGame.js"></script>
     <script type="module" src="javascript/boardTimer.js"></script>
     <script type="module" src="./javascript/list.js"></script>
     <script type="module" src="./javascript/script.js"></script>
     <script type="module" src="./javascript/settings.js"></script>
+    <script type="module" src="javascript/ruleset.js"></script>
   </body>
 </html>

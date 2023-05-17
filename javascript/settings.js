@@ -1,28 +1,28 @@
 /* THE MODAL FUNCTIONS */
 
 // Get the modal
-const modal = document.getElementById("settings-modal");
+const settingsModal = document.getElementById("settings-modal");
 
 // Get the button that opens the modal
 const btnSettings = document.getElementById("btn-settings");
 
-// Get the <span> element that closes the modal
-const btnClose = document.getElementsByClassName("fa-xmark")[0];
+// Get the Xmark element that closes the modal
+const btnCloseSettings = document.querySelector(".close-settings");
 
 // When the user clicks on the button, open the modal
 btnSettings.onclick = function() {
-  modal.style.display = "block";
+  settingsModal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
-btnClose.onclick = function() {
-  modal.style.display = "none";
+// When the user clicks on xmark, close the modal
+btnCloseSettings.onclick = function() {
+  settingsModal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == settingsModal) {
+    settingsModal.style.display = "none";
   }
 }
 
