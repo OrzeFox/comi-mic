@@ -156,14 +156,14 @@
     
   }
   
-  #submit-subject, #submit-action {
+ /*  #submit-subject, #submit-action {
     width: 30%;
     font-family: "happy monkey";
     font-size: 0.9rem;
     font-weight: 500;
     letter-spacing: 1px;
     margin-left: -7px;
-  }
+  } */
 
   #submit-subject, #submit-action {
     width: 35%;
@@ -192,7 +192,7 @@
       width: 100%;
   }
 
- #submit-subject::after, #submit-action:after {
+ #submit-subject:after, #submit-action:after {
   content: "";
   position: absolute;
   z-index: -1;

@@ -113,7 +113,8 @@ function starter() {
 }
 
 starter();
-
+/* 
 btnRestart.addEventListener("click", () => {
   location.reload();
 });
+ */

@@ -1,0 +1,137 @@
+/*----------- Reset------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .boardGame {
+        background-color: #000;
+    }
+
+    /* READY DISPLAY */
+    .readyDisplay{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 2rem;
+        height: 100vh;
+        padding: 3rem;
+        background-image: url('https://res.cloudinary.com/dcwt8jbja/image/upload/v1684268314/random/bk-blue-mobil_if9clv.svg');
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+    }
+
+    .boardGame .readyDisplay h2 {
+        font-family: 'Bangers', sans-serif;
+        color:#ffce55;
+        text-shadow: 3px 3px#222;
+        font-size: 2rem;
+    }
+
+    #play-txt {
+        font-size: 3rem;
+    }
+
+    .cloudResult {
+        position: relative;
+    }
+
+    .cloudResult p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .ready-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 3rem;
+    }
+
+
+    /* CHALLENGE DISPLAY */
+    .challengeDisplay{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        margin: 2rem;
+        max-width: 1440px;
+        height: 100vh;
+        padding: 3rem;
+        position: relative;
+        background-image: url('https://res.cloudinary.com/dcwt8jbja/image/upload/v1684268314/random/bk-blue-mobil_if9clv.svg');
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+    }
+
+    .game-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap:3rem;
+    }
+
+    /* TIMER */
+    .timerGame{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 4rem;
+        gap: 1rem;
+    }
+
+    .timer{
+        text-align:center;
+        font-family:Bangers;
+        color:#222;
+        font-size:2rem;
+        letter-spacing:2px;
+        animation: wiggle 1s infinite;
+        padding: .5rem 3rem;
+        margin-right: 1rem;
+        border-radius: 5px;
+    }
+
+    .timer:hover {
+        animation: none;}
+
+    .startTimer button {
+        text-align:center;
+        font-family:Bangers;
+        color:rgb(0, 0, 0);
+        font-size:35px;
+        border-radius: 10px;
+        margin-top: 2rem;
+    }
+
+
+
+    @keyframes wiggle {
+        0% { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
+    }
+}
+
+
+
+
+
+

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/settings.css" />
     <link rel="stylesheet" href="css/list.css" />
+    <link rel="stylesheet" href="css/boardGame.css">
     <!-- Preload Fonts -->
     <link
       rel="preload"
@@ -54,6 +55,18 @@
             </button>
           </li>
         </ul>
+
+        <section class="ruleset modal">
+          <h1>ABOUT THE GAME</h1>
+          <p>You have to do an action while imitating an animal, a person or an object that are generated randomly as pairings while other players try to guess both of the words! </p>
+          <h1>RULESET</h1>
+            <ol>
+              <li> the player who is doing the challenge can see the word pairing.</li>
+              <li></li>The player has to do the action while imitating the subject, it is not allowed to do the imitation and the action separately.</li>
+              <li></li>The guessing players have to say both the subject and the action to make a correct guess.</li>
+              <li></li>The playing order can be decided among the players.</li>
+            </ol>
+        </section>
 
         <!-- SETTINGS BUTTON -->
         <div class="settings">
@@ -152,22 +165,40 @@
     </nav>
   </header>
   <body>
-    <h1>Ready?</h1>
-    <p id="resultGame"></p>
-    <button id="btnPlay">PLAY</button>
-    <button id="btnRestart">RESTART</button>
 
-    <div class="board-game">
-      <div class="screen">
-        <h2 class="ready-txt"></h2>
-        <button class="play-btn"></button>
-        <button class="timer"></button>
-      </div>
+    <!-- BOARD GAME -->
+    <section class="boardGame">
 
-      <button class="board-btns">Cancel</button>
-      <button class="board-btns">Next</button>
-    </div>
+      <!-- READY DISPLAY -->
+      <container class="readyDisplay displayGame">
+          <h2><spam id="lets-txt">LET'S</spam><br>
+              <spam id="play-txt">PLAY!</spam></h2> 
 
+          <div class="cloudResult">
+              <p>Press the button to start</p>
+              <img class="cloudGame" alt="cloud display game board" src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/bubble-cloud_zn8adb.svg">
+          </div>
+          <button id="btnPlay" class="ready-btn"><img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/ready-btn_syaytk.svg" alt=""></button>
+      </container>
+
+      <!-- CHALLENGE DISPLAY -->
+      <container class="challengeDisplay">
+          <!-- TIMER -->
+          <div class="timerGame">
+              <div class="timer" id="timer">02:00</div>
+              <button id="startTimer">Start Timer</button>
+          </div>
+          <div class="cloudResult displayGame">
+              <p id="resultGame"></p>
+              <img class="cloudGame" alt="cloud display game board" src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/bubble-cloud_zn8adb.svg">
+          </div>
+          <div class="game-btn board-btns">
+              <button>FINISH</button>
+              <button>NEXT</button>
+          </div>
+      </container>
+
+  </section>
     <!------------ FOOTER----------->
     <footer>
       <div class="foot-container">
@@ -184,7 +215,7 @@
         </div>
       </div>
     </footer>
-
+    <script type="module" src="javascript/boardTimer.js"></script>
     <script type="module" src="./javascript/list.js"></script>
     <script type="module" src="./javascript/script.js"></script>
     <script type="module" src="./javascript/settings.js"></script>
