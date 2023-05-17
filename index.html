@@ -38,25 +38,44 @@
 
   <header class="main panel red">
     <nav>
-      <div class="nav">
-        <ul class="header-container">
-          <li class="logo-comimic">
+      <div class="nav"> <!-- we can delete this div maybe -->
+
+        <!-- HEADER MOBILE -->
+        <div class="nav-mobile">   
             <img
+              class="logo-comimic"
               id="logo-comimic"
-              src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/logo-comimic_bzzpo4.svg"
-            />
-          </li>
+              src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/logo-comimic_bzzpo4.svg" alt="logo"/>
+          
+          <label for="btn-nav" class="btn-nav"> <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684248988/random/btn-hamb_spoto8.svg" alt="menu"></label>
+          <button id="btn-nav">
+          <ul class="header-container navigation">
           <li class="settings-btn">
-            <button type="button" id="btn-settings" title="Settings">
-              <img
-                id="btn-settings-image"
-                src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/setting-icon_oqe0ii.svg"
-              /> 
-            </button>
+            <button type="button" id="btn-settings" title="Settings">Settings</button>
+          </li>
+          <li class="ruleset-btn">
+            <button type="button" id="btn-ruleset" title="Ruleset">Ruleset</button>
           </li>
         </ul>
+      </div> <!-- Closes the mobile navigation section -->
 
-        <section class="ruleset modal">
+      <!-- HEADER DESKTOP -->
+    <div class="nav-desktop">
+      <nav>
+        <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/setting-icon_oqe0ii.svg" alt="logo">
+        <ul class="header-container navigation">
+          <li class="settings-btn">
+            <button type="button" id="btn-settings" title="Settings">Settings</button>
+          </li>
+          <li class="ruleset-btn">
+            <button type="button" id="btn-ruleset" title="Ruleset">Ruleset</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+      <!-- SECTION RULESET -->
+        <section id="ruleset-modal" class="modal">
           <h1>ABOUT THE GAME</h1>
           <p>You have to do an action while imitating an animal, a person or an object that are generated randomly as pairings while other players try to guess both of the words! </p>
           <h1>RULESET</h1>
@@ -68,7 +87,7 @@
             </ol>
         </section>
 
-        <!-- SETTINGS BUTTON -->
+        <!-- SECTION SETTINGS -->
         <div class="settings">
           <!-- TRIGGER THE SETTINGS MODAL -->
           <!-- <button type="button" id="btn-settings" title="Settings"> <img class src="./assets/settingsIcon.png"></button> -->
