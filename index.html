@@ -36,26 +36,34 @@
     <link rel="icon" href="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684253177/random/Group_68_v0llbo.png" type="image/png">
     <title>Comimic</title>
   </head>
-  <header class="main panel red">
-    <nav>
-      <div class="nav">
-        <ul class="header-container">
-          <li class="logo-comimic">
-            <img
-              id="logo-comimic"
-              src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/logo-comimic_bzzpo4.svg"
-            />
-          </li>
-          <li class="settings-btn">
-            <button type="button" id="btn-settings" title="Settings">
-              <img
-                id="btn-settings-image"
-                src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/setting-icon_oqe0ii.svg"
-              /> 
-            </button>
-          </li>
+  <!-- HEADER -->
+  
+  <header class="main-header">
+    <!-- HEADER DESKTOP -->
+    <div class="nav-desktop">
+      <nav>
+        <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/setting-icon_oqe0ii.svg" alt="logo">
+        <ul class="navigation">
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Ruleset</a></li>
         </ul>
+      </nav>
+    </div>
+    <!-- HEADER MOBILE -->
+    <div class="nav-mobile">
 
+      <label for="btn-nav" class="btn-nav"> <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684248988/random/btn-hamb_spoto8.svg" alt="menu"></label>
+      <input type="checkbox" id="btn-nav">
+      
+      <nav>
+        <ul class="navigation">
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Ruleset</a></li>
+        </ul>
+      </nav>
+      <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/logo-comimic_bzzpo4.svg" alt="logo">
+    </div>
+  </header>
         <!-- SETTINGS BUTTON -->
         <div class="settings">
           <!-- TRIGGER THE SETTINGS MODAL -->
