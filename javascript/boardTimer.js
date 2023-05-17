@@ -3,7 +3,7 @@ var timeLeft = 120; // 2 minutes in seconds
 var countdown;
 var startTimerButton = document.getElementById('startTimer');
 var audio = document.getElementById('audio'); 
-
+const btnFinish = document.querySelector('.game-btn button:nth-of-type(1)');
 
 function startTimer() {
     clearInterval(countdown);
@@ -44,3 +44,8 @@ function startTimer() {
 }
 
 startTimerButton.addEventListener('click', startTimer);
+
+btnFinish.addEventListener('click', () => {
+    clearInterval(countdown);
+    audio.pause(); 
+  });

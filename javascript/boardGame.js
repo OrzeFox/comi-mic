@@ -1,14 +1,66 @@
+import { objects } from './script.js';
+import { actions } from './script.js';
+
 // Elementos importantes
 const readyDisplay = document.querySelector('.readyDisplay');
 const challengeDisplay = document.querySelector('.challengeDisplay');
 const btnPlay = document.getElementById('btnPlay');
+const btnFinish = document.querySelector('.game-btn button:nth-of-type(1)');
+const btnNext = document.querySelector('.game-btn button:nth-of-type(2)');
+const resultGame = document.getElementById('resultGame');
 
-//display just the starter page - ready
+let objectListGame = objects;
+let actionListGame = actions;
+
+// Ocultar challengeDisplay inicialmente
 challengeDisplay.style.display = 'none';
 
-// Event button "Ready"
+// Evento "Ready"
 btnPlay.addEventListener('click', function() {
-  // display none when click ready
+  // Ocultar a seção readyDisplay
   readyDisplay.style.display = 'none';
+  // Exibir a seção challengeDisplay
   challengeDisplay.style.display = 'block';
+
+  // Gerar um desafio aleatório
+  generateRandomChallenge();
 });
+
+// Random
+function generateRandomChallenge() {
+  const randomIndex1 = Math.floor(Math.random() * objectListGame.length);
+  const randomObject = objectListGame[randomIndex1];
+  const randomIndex2 = Math.floor(Math.random() * actionListGame.length);
+  const randomAction = actionListGame[randomIndex2];
+
+  resultGame.innerText = `You've got ${randomObject} and your action is ${randomAction}!`;
+
+  objectListGame.splice(randomIndex1, 1);
+  actionListGame.splice(randomIndex2, 1);
+
+  if (objectListGame.length === 0) {
+    btnNext.disabled = true;
+    resultGame.innerText = `"THE END!"`;
+  }
+}
+
+// Btn "Finish"
+btnFinish.addEventListener('click', () => {
+
+  readyDisplay.style.display = 'flex'; // Exibir display ready 
+  readyDisplay.style.justifyContent = 'center';
+  readyDisplay.style.alignItems = 'center';
+  challengeDisplay.style.display = 'none';
+  
+});
+
+// Btn "Next"
+btnNext.addEventListener('click', () => {
+  // Gerar um novo desafio aleatório
+  generateRandomChallenge();
+});
+
+
+
+
+
