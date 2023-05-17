@@ -26,7 +26,7 @@
         justify-content:center;
         align-items: center;
         flex-direction: column;
-        margin: 2rem;
+        margin: 5rem 2rem 2rem 2rem;
         height: 100vh;
         padding: 3rem;
         background-image: url('https://res.cloudinary.com/dcwt8jbja/image/upload/v1684268314/random/bk-blue-mobil_if9clv.svg');
@@ -75,7 +75,7 @@
         align-items: center;
         flex-direction: column;
         position: relative;
-        margin: 2rem;
+        margin: 2rem ;
         max-width: 1440px;
         height: 100vh;
         padding: 3rem;
