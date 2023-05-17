@@ -24,10 +24,10 @@
   .modal-content {
     width: 80vw;
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto; 
     padding: 1rem;
     border: 2px solid black;
-    border-radius: 20px; /* Could be more or less, depending on screen size */
+    border-radius: 20px; 
   }
 
   .modal-content h2 {
@@ -81,6 +81,7 @@
 .setting-btns button {
   font-family: "bangers";
   font-size: 1.2rem;
+  
 }
 
   /* Style the buttons that are used to open the tab content */
@@ -132,7 +133,7 @@
   }
 
 
-  .action-heading h1, .subject-heading h1 {
+  .tab-container h1, .tab-container h1 {
     font-family: "bangers";
     font-size: 1.1rem;
     letter-spacing: 1px;
@@ -268,7 +269,7 @@
   }
   
   
-    .action-heading h1, .subject-heading h1 {
+    .tab-container h1, .tab-container h1 {
       font-family: "bangers";
       font-size: 2.2rem;
       letter-spacing: 1px;

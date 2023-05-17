@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font awesome script link -->
     <script src="https://kit.fontawesome.com/2e08298666.js" crossorigin="anonymous"></script>
     <!-- Social media footer -->
@@ -12,13 +12,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <!-- Style CSS -->
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/ruleset.css">
-    <link rel="stylesheet" href="css/settings.css" />
-    <link rel="stylesheet" href="css/list.css" />
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/list.css">
     <link rel="stylesheet" href="css/boardGame.css">
+    <link rel="stylesheet" href="css/slider.css">
     <!-- Preload Fonts -->
     <link
       rel="preload"
@@ -26,14 +27,14 @@
       as="font"
       type="font/ttf"
       crossorigin="anonymous"
-    />
+    >
     <link
       rel="preload"
       href="/assets/fonts/HappyMonkey-Regular.ttf"
       as="font"
       type="font/ttf"
       crossorigin="anonymous"
-    />
+    >
 
     <link rel="icon" href="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684253177/random/Group_68_v0llbo.png" type="image/png">
     <title>Comimic</title>
@@ -41,14 +42,13 @@
 
   <header class="main panel red">
     <nav>
-      <div class="nav"> <!-- we can delete this div maybe -->
 
         <!-- HEADER MOBILE -->
         <div class="nav-mobile">   
             <img
               class="logo-comimic"
               id="logo-comimic"
-              src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/logo-comimic_bzzpo4.svg" alt="logo"/>
+              src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/logo-comimic_bzzpo4.svg" alt="logo">
           
           <label for="btn-nav" class="btn-nav"> <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684248988/random/btn-hamb_spoto8.svg" alt="menu"></label>
           <button id="btn-nav">
@@ -74,8 +74,7 @@
             <button type="button" id="btn-ruleset" title="Ruleset">Ruleset</button>
           </li>
         </ul>
-
-    </div>
+      </div>
 
       <!-- SECTION RULESET -->
         <div id="ruleset-modal" class="modal-ruleset">
@@ -94,9 +93,6 @@
         </div>
 
         <!-- SECTION SETTINGS -->
-        <div class="settings">
-          <!-- TRIGGER THE SETTINGS MODAL -->
-          <!-- <button type="button" id="btn-settings" title="Settings"> <img class src="./assets/settingsIcon.png"></button> -->
 
           <!-- THE MODAL -->
           <div id="settings-modal" class="modal">
@@ -122,74 +118,104 @@
               <!-- TAB BUTTONS -->
               <div class="setting-tabs">
                 <div class="setting-btns">
-                  <button id="btn-subject" class="tab-title active">
-                    Subject
-                  </button>
+                  <button id="btn-subject" class="tab-title active">Subject</button>
                   <button id="btn-action" class="tab-title">Action</button>
                 </div>
 
                 <!-- SUBJECT TAB CONTENT -->
                 <div class="tab-container">
                   <div id="tab-subject" class="tab-content active">
-                    <div class="subject-heading">
                       <h1>Subject List</h1>
-                    </div>
                     <form class="form">
-                      <div>
-                        <label
-                          class="subject-form_label"
-                          for="subject-input"
-                        ></label>
-                        <input
-                          class="subject-input"
-                          type="text"
-                          id="subject-input"
-                          name="subject-input-name"
-                          required
-                        />
-                        <button id="submit-subject" class="button">
-                          <span>Submit</span>
-                        </button> 
-                      </div> <!-- subject submit input and button div -->
+                        <label class="subject-form_label" for="subject-input"></label>
+                        <input class="subject-input" type="text" id="subject-input" name="subject-input-name" required>
+                        <button id="submit-subject" class="button">Submit</button> 
                     </form>
-                    <div>
                       <ul class="subject-list"></ul>
-                    </div> <!-- closing subject list ul div -->
                   </div>
 
                   <!-- ACTION CONTENT -->
                   <div id="tab-action" class="tab-content">
-                    <div class="action-heading">
                       <h1>Action List</h1>
-                    </div>
                     <form class="form">
-                      <div>
                         <label class="form_label" for="action-input"></label>
-                        <input
-                          class="form_input"
-                          type="text"
-                          id="action-input"
-                          name="action-input-name"
-                          required
-                        />
-                        <button id="submit-action" class="button">
-                          <span>Submit</span>
-                        </button>
-                      </div> <!-- action submit input and button div -->
+                        <input class="form_input" type="text" id="action-input" name="action-input-name" required>
+                        <button id="submit-action" class="button">Submit</button>
                     </form>
-                    <div>
                       <ul class="action-list"></ul>
-                    </div> <!-- closing action list ul div -->
                   </div> <!-- closing action tab tag -->
                 </div> <!-- closing tab container tag -->
-              </div>  <!-- closing setting tabs tag -->
+              </div>  <!-- closing setting tab tag -->
             </div> <!-- closing modal content tag -->
           </div> <!-- closing settings modal tag -->
-        </div> <!-- closing settings div tag -->
-      </div> <!-- Closing nav div tag -->
     </nav>
   </header>
   <body>
+    <!-- INSTRUCTIONS SLIDER -->
+    <section class="slider">
+      <div class="slideshow-container">
+       <div class="slideshow" data-transition="fade">
+                  <input type="radio" name="ss2" id="ss2-item-1" class="slideshow--bullet" checked="checked" />
+                  <div class="slideshow--item slideshow--item1" >
+                      <div class="img1">
+                          <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684251726/random/img%20comic/01start_ljzbkq.svg" alt="image1">
+                      </div>
+                      
+                      <label for="ss2-item-6" class="slideshow--nav slideshow--nav-previous">Go to slide 6</label>
+                      <label for="ss2-item-2" class="slideshow--nav slideshow--nav-next">Go to slide 2</label>
+                  </div>
+              
+                  <input type="radio" name="ss2" id="ss2-item-2" class="slideshow--bullet" />
+                  <div class="slideshow--item slideshow--item2">
+                      <div class="img2">
+                      <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684251726/random/img%20comic/02_yxluif.svg" alt="image2">
+                      </div>
+                      <label for="ss2-item-1" class="slideshow--nav slideshow--nav-previous">Go to slide 1</label>
+                      <label for="ss2-item-3" class="slideshow--nav slideshow--nav-next">Go to slide 3</label>
+                  </div>
+              
+                  <input type="radio" name="ss2" id="ss2-item-3" class="slideshow--bullet" />
+                  <div class="slideshow--item slideshow--item3 ">
+                      <div class="img3">
+                      <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684251726/random/img%20comic/03_vmjcg4.svg" alt="image3">
+                      </div>
+                      
+                      <label for="ss2-item-2" class="slideshow--nav slideshow--nav-previous">Go to slide 2</label>
+                      <label for="ss2-item-4" class="slideshow--nav slideshow--nav-next">Go to slide 4</label>
+                  </div>
+                  
+                  <input type="radio" name="ss2" id="ss2-item-4" class="slideshow--bullet">
+                  <div class="slideshow--item slideshow--item4">
+                      <div class="img4">
+                      <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684251726/random/img%20comic/04_kr63bu.svg" alt="image4">
+                      </div>
+                      
+                      <label for="ss2-item-3" class="slideshow--nav slideshow--nav-previous">Go to slide 3</label>
+                      <label for="ss2-item-5" class="slideshow--nav slideshow--nav-next">Go to slide 5</label>
+                  </div>
+  
+                  <input type="radio" name="ss2" id="ss2-item-5" class="slideshow--bullet">
+                  <div class="slideshow--item slideshow--item5 ">
+                      <div class="img5">
+                      <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684251726/random/img%20comic/05_gqghys.svg" alt="image5">
+                      </div>
+                      
+                      <label for="ss2-item-4" class="slideshow--nav slideshow--nav-previous">Go to slide 4</label>
+                      <label for="ss2-item-6" class="slideshow--nav slideshow--nav-next">Go to slide 6</label>
+                  </div>
+  
+                  <input type="radio" name="ss2" id="ss2-item-6" class="slideshow--bullet" />
+                  <div class="slideshow--item slideshow--item6">
+                      <div class="img6">
+                      <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684251726/random/img%20comic/06_dcsshm.svg" alt="image6">
+                      </div>
+                      <label for="ss2-item-5" class="slideshow--nav slideshow--nav-previous">Go to slide 5</label>
+                      <label for="ss2-item-1" class="slideshow--nav slideshow--nav-next">Go to slide 1</label>
+                  </div>
+          
+              </div>
+          </div>
+      </section>
 
     <!-- BOARD GAME -->
     <section class="boardGame">
@@ -244,6 +270,9 @@
         </div>
       </div>
     </footer>
+
+    <!-- JS FILES -->
+
     <script type="module" src="javascript/boardGame.js"></script>
     <script type="module" src="javascript/boardTimer.js"></script>
     <script type="module" src="./javascript/list.js"></script>
