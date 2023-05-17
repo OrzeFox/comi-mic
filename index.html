@@ -39,18 +39,19 @@
   </head>
 
   <header class="main panel red">
-    <nav>
       <div class="nav"> <!-- we can delete this div maybe -->
 
         <!-- HEADER MOBILE -->
         <div class="nav-mobile">   
-            <img
+            <a href="index.html" id="btn-logo"><img
               class="logo-comimic"
               id="logo-comimic"
               src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/logo-comimic_bzzpo4.svg" alt="logo"/>
-          
-          <label for="btn-nav" class="btn-nav"> <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684248988/random/btn-hamb_spoto8.svg" alt="menu"></label>
-          <button id="btn-nav">
+            </a>
+      <label for="btn-nav" class="btn-nav"> <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684248988/random/btn-hamb_spoto8.svg" alt="menu"></label>
+      <input type="checkbox" id="btn-nav">
+
+            <nav id="header-nav">
           <ul class="header-container navigation">
           <li class="settings-btn">
             <button type="button" id="btn-settings" title="Settings">Settings</button>
@@ -59,6 +60,7 @@
             <button type="button" id="btn-ruleset" title="Ruleset">Ruleset</button>
           </li>
         </ul>
+      </nav>
       </div> <!-- Closes the mobile navigation section -->
 
       <!-- HEADER DESKTOP -->

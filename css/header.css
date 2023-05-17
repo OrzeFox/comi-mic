@@ -53,24 +53,23 @@
     position: fixed;
     top: 0;
     z-index: 999;
+    width: 100%;
+    background: #ffce55;
 }
 
-  .main-header {
-    background: #ffce55;
-    width: 100%;
-    display: flex;
-  }
-  nav {
+
+nav {
     position: absolute;
     left: 50%;
     width: 300px;
-    top: 77px;
+    top: 65px;
     background: #ffce55;
     transform: translateX(100%);
     transition: 0.4s ease;
     z-index: 100;
     border: 1px solid black;
     overflow: hidden;
+    border-radius: 2px;
   }
 
   .btn-nav:hover {
@@ -82,18 +81,9 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 
-  .navigation a {
-    display: block;
-    line-height: 3.5;
-    padding: 0 10px;
-    text-decoration: none;
-    transition: 0.4s ease;
-  }
-
   #btn-nav {
     display: none;
   }
-
   #btn-nav:checked ~ nav {
     transform: translateX(0);
   }
@@ -108,12 +98,31 @@
   }
   .nav-mobile {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
     width: 100%;
-    align-content: center;
-    padding: 1%;
-    margin: 2%;
-    height: 60px;
-  }
+    justify-content: space-between;
+    height: 65px;
+}
+#btn-logo{
+    display: flex;
+}
+#btn-settings{
+    border: solid #b88504 1px;
+    background: #ffce55;
+    width: 100%;
+    text-align: left;
+    padding: 2%;
+    font-family: "Happy Monkey", cursive;
+    color: #222;
+}
+#btn-ruleset{
+    border: solid #b88504 1px;
+    background: #ffce55;
+    width: 100%;
+    text-align: left;
+    padding: 2%;
+
+    font-family: "Happy Monkey", cursive;
+    color: #222;
+}
+  
 }
