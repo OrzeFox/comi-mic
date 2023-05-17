@@ -7,14 +7,23 @@
 
 @media only screen and (max-width: 500px) {
 
+    body{
+        background-color: black;
+        margin:2rem 0;
+    }
+
     .boardGame {
         background-color: #000;
     }
 
+    .cloudResult .cloudGame {
+        padding-top: 6rem;
+      }
+
     /* READY DISPLAY */
     .readyDisplay{
         display: flex;
-        justify-content:space-between;
+        justify-content:center;
         align-items: center;
         flex-direction: column;
         margin: 2rem;
@@ -35,6 +44,7 @@
 
     #play-txt {
         font-size: 3rem;
+        position: relative;
     }
 
     .cloudResult {
@@ -43,8 +53,7 @@
 
     .cloudResult p {
         position: absolute;
-        top: 50%;
-        left: 50%;
+        padding-top: 6rem;
         transform: translate(-50%, -50%);
         font-size: 1.5rem;
         text-align: center;
@@ -55,6 +64,7 @@
         border: none;
         cursor: pointer;
         margin-bottom: 3rem;
+        position: relative;
     }
 
 
