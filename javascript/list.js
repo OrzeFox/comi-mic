@@ -57,6 +57,10 @@ import {actions} from './script.js'
   
       addedSubjectItem.appendChild(removeButton);
       subjectList.appendChild(addedSubjectItem);
+
+      setTimeout(() => {
+        addedSubjectItem.classList.add("fade-in");
+      }, 10);
     }
   }
 
@@ -64,6 +68,7 @@ import {actions} from './script.js'
 
 
 // ACTIONS LIST CREATION
+
 
 actionSubmit.addEventListener("click", (event) => {
   event.preventDefault();
@@ -108,9 +113,13 @@ function updateActions() {
 
     addedActionItem.appendChild(removeButton);
     actionList.appendChild(addedActionItem);
-  }
-}
 
+    setTimeout(() => {
+      addedActionItem.classList.add("fade-in");
+    }, 10);
+  }
+  
+}
 
 updateActions()
 

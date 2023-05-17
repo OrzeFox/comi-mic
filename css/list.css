@@ -13,7 +13,14 @@ div .action-list li {
     font-size: 0.9rem;
     margin-left: 15px;
     list-style-type: circle;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; 
 }
+
+.action-list li.fade-in {
+    opacity: 1;
+}  
+
 
 /* REMOVE BUTTON DESIGN */
 
@@ -47,8 +54,13 @@ div .subject-list li {
     font-size: 0.9rem;
     margin-left: 15px;
     list-style-type: circle;
-   
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; 
 }
+
+.subject-list li.fade-in {
+    opacity: 1;
+}  
 
 /* DESKTOP STYLING */
 
@@ -83,8 +95,8 @@ div .subject-list li {
         margin-left: 30px;
         margin-bottom: 10px;
         list-style-type: circle;
-        
     }
+    
 
     .remove-button{
         float: right;
