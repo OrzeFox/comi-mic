@@ -1,21 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i');
-body {
-	text-align: center;
-	background-color: #0dd6f1;
-	padding-top: 20px;
-}
-.slideshow-container {
+
+
+.slider{
+	background-image: url(https://res.cloudinary.com/dcwt8jbja/image/upload/v1684306691/random/bk_GREEN_gwmz9w.svg);
+    background-size: cover;
 	
 }
+
+
 .slideshow {
 	width: 40%;
-  height: 300px;
-	position: relative;
+   height: 300px;
+	position:relative;
 	text-align: center;
 	line-height: 600px;
 	padding-bottom: 30px;
 	margin: 0 auto;
 	transition: all 0.5s ease;
+	
     }
 /* slideshow item */
 .slideshow--item {
@@ -26,12 +28,9 @@ body {
 	top: 0;
 	overflow: hidden;
 	visibility: hidden;
-}
-.slideshow--item img {
-	width: 100%;
-	height: auto;
 	
 }
+
 .slideshow--bullet:checked + .slideshow--item {
 	visibility: visible;
 }
@@ -131,7 +130,7 @@ body {
 .folio-button:hover {
 	background-color: #B0D6C9;
 }
-@media only screen and (max-width: 980px) {
+/* @media only screen and (max-width: 980px) {
 	.slideshow {
 		width: 100%;
   	height: 200px;
@@ -142,8 +141,8 @@ body {
 	.button-container {
 		margin-top: 80px;
 	}
-}
-@media only screen and (max-width: 402px) {
+} */
+@media only screen and (max-width: 430px) {
 	.slideshow {
 		width: 100%;
   	height: 150px;
@@ -153,5 +152,86 @@ body {
 }
 		.button-container {
 		margin-top: 120px;
+	}
+	
+	.slideshow--item{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 400px;
+		overflow: hidden;
+	
+	}
+	.slideshow--item1{
+		
+		
+
+    }
+	.slideshow--item2{
+
+	}
+	.slideshow--item3{
+		object-fit: contain;
+		height: 400px;
+		}
+	.slideshow--item4{
+		
+	}
+	.slideshow--item5{
+		
+	}
+	.slideshow--item6{
+		
+	}
+	.img1{
+		padding-left: 100px;
+		padding-right: 100px;
+		width: auto;
+		height: 100%;
+		
+	}
+	.img2{
+		padding-left: 100px;
+		padding-right: 100px;
+		width: auto;
+		height: 100%;
+		
+	}
+	.img3{
+		padding-left: 250px;
+		padding-right: 100px;
+		width: auto;
+		height: 90%;
+	}
+	.img4{
+		padding-left: 200px;
+		padding-right: 100px;
+		width: auto;
+		height: 90%;
+		
+	}
+	.img5{
+		padding-left: 200px;
+		padding-right: 100px;
+		width: auto;
+		height: 100
+	}
+	.img6{
+		padding-left:50px;
+		padding-right:50px;
+		width: 100%;
+		height: auto;
+	}
+	.img6 img{
+		
+		width: 100%;
+		height: auto;
+	}
+	.img2 img{
+		width: 340px;
+	}
+	.img4 img{
+	    width: 400px;
 	}
 }
