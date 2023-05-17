@@ -58,7 +58,7 @@
 }
 
 
-nav {
+/* nav {
     position: absolute;
     left: 50%;
     width: 300px;
@@ -70,15 +70,17 @@ nav {
     border: 1px solid black;
     overflow: hidden;
     border-radius: 2px;
-  }
+  } */
 
-  .btn-nav:hover {
-    background: rgba(0, 0, 0, 0.3);
-  }
-  .navigation li {
+
+/*   .navigation li {
     list-style: none;
     width: 100%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  } */
+
+   /*  .btn-nav:hover {
+    background: rgba(0, 0, 0, 0.3);
   }
 
   #btn-nav {
@@ -101,8 +103,8 @@ nav {
     width: 100%;
     justify-content: space-between;
     height: 65px;
-}
-#btn-logo{
+} */
+/* #btn-logo{
     display: flex;
 }
 #btn-settings{
@@ -123,6 +125,6 @@ nav {
 
     font-family: "Happy Monkey", cursive;
     color: #222;
-}
+} */
   
 }
