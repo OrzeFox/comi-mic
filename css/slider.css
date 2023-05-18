@@ -3,31 +3,36 @@
 
 .slider{
 	background-image: url(https://res.cloudinary.com/dcwt8jbja/image/upload/v1684306691/random/bk_GREEN_gwmz9w.svg);
-    background-size: cover;
-	
+	background-size: 400px;
+	height: 300px;
+	margin: 6rem 2rem 2rem 2rem;
+	background-repeat: no-repeat;
+	padding-bottom: 500px;
+	padding-top: 100px;
+	border-radius: 20px;
 }
 
 
 .slideshow {
 	width: 40%;
-   height: 300px;
+    height: 300px;
 	position:relative;
 	text-align: center;
 	line-height: 600px;
 	padding-bottom: 30px;
 	margin: 0 auto;
 	transition: all 0.5s ease;
-	
     }
 /* slideshow item */
 .slideshow--item {
 	width: 100%;
-  height: 400px;
+  	height: 400px;
 	line-height: 1.5;
 	position: absolute;
 	top: 0;
 	overflow: hidden;
 	visibility: hidden;
+	padding-bottom: 50px;
 	
 }
 
@@ -109,6 +114,7 @@
 	background: #8d8d8d;
 	border-radius: 50%;
 	transition: all 0.5s ease;
+	
 }
 .slideshow--bullet:checked {
 	background: #333;
@@ -126,6 +132,7 @@
 	text-decoration: none;
 	font-family: 'Roboto', sans-serif;
 	transition: all 0.3s ease;
+	
 }
 .folio-button:hover {
 	background-color: #B0D6C9;
