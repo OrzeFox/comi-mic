@@ -39,6 +39,9 @@
     <link rel="icon" href="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684253177/random/Group_68_v0llbo.png" type="image/png">
     <title>Comimic</title>
   </head>
+  <audio id="buttonSound">
+    <source id="buttonSound" src="/assets/sonidos/mixkit-arcade-game-jump-coin-216.wav" type="audio/mpeg">
+  </audio>
 
   <header class="main panel red">
       <!-- <div class="nav"> --> <!-- we can delete this div maybe -->
@@ -50,16 +53,16 @@
             id="logo-comimic"
             src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/logo-comimic_bzzpo4.svg" alt="logo"/>
           </a>
-          <button for="btn-nav" class="hamb-btn">
+          <button for="btn-nav" class="hamb-btn btnSound">
             <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684248988/random/btn-hamb_spoto8.svg" alt="menu">
           </button>
           <nav class="header-nav" id="header-nav">
             <ul class="header-container navigation">
               <li class="settings-btn">
-                <button type="button" id="btn-settings" title="Settings">Settings</button>
+                <button type="button" id="btn-settings" class="btnSound" title="Settings">Settings</button>
               </li>
               <li class="ruleset-btn">
-                <button type="button" id="btn-ruleset" title="Ruleset">Ruleset</button>
+                <button type="button" id="btn-ruleset" class="btnSound" title="Ruleset">Ruleset</button>
               </li>
             </ul>
           </nav>
@@ -75,10 +78,10 @@
         </a>
        <ul class="header-container navigation">
           <li class="settings-btn">
-            <button type="button" id="btn-settings-2" title="Settings">Settings</button>
+            <button type="button" id="btn-settings-2" class="btnSound" title="Settings">Settings</button>
           </li>
           <li class="ruleset-btn">
-            <button type="button" id="btn-ruleset-2" title="Ruleset">Ruleset</button>
+            <button type="button" id="btn-ruleset-2" class="btnSound" title="Ruleset">Ruleset</button>
           </li>
         </ul>
     </div>
@@ -125,8 +128,8 @@
               <!-- TAB BUTTONS -->
               <div class="setting-tabs">
                 <div class="setting-btns">
-                  <button id="btn-subject" class="tab-title active">Subject</button>
-                  <button id="btn-action" class="tab-title">Action</button>
+                  <button id="btn-subject" class="tab-title active btnSound">Subject</button>
+                  <button id="btn-action" class="tab-title btnSound">Action</button>
                 </div>
 
                 <!-- SUBJECT TAB CONTENT -->
@@ -136,7 +139,7 @@
                     <form class="form">
                         <label class="subject-form_label" for="subject-input"></label>
                         <input class="subject-input" type="text" id="subject-input" name="subject-input-name" required>
-                        <button id="submit-subject" class="button">Submit</button> 
+                        <button id="submit-subject" class="button btnSound">Submit</button> 
                     </form>
                       <ul class="subject-list"></ul>
                   </div>
@@ -147,7 +150,7 @@
                     <form class="form">
                         <label class="form_label" for="action-input"></label>
                         <input class="form_input" type="text" id="action-input" name="action-input-name" required>
-                        <button id="submit-action" class="button">Submit</button>
+                        <button id="submit-action" class="button btnSound">Submit</button>
                     </form>
                       <ul class="action-list"></ul>
                   </div> <!-- closing action tab tag -->
@@ -236,7 +239,7 @@
               <p>Press the button to start</p>
               <img class="cloudGame" alt="cloud display game board" src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/bubble-cloud_zn8adb.svg">
           </div>
-          <button id="btnPlay" class="ready-btn"><img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/ready-btn_syaytk.svg" alt=""></button>
+          <button id="btnPlay" class="ready-btn btnSound"><img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/ready-btn_syaytk.svg" alt="already button"></button>
       </container>
 
       <!-- CHALLENGE DISPLAY -->
@@ -244,7 +247,7 @@
           <!-- TIMER -->
           <div class="timerGame">
               <div class="timer" id="timer">02:00</div>
-              <button id="startTimer">Start Timer</button>
+              <button class="btnSound" id="startTimer">Start Timer</button>
               <!-- AUDIO FILES -->
               <audio id="audio"  loop src="./assets/sonidos/clock-ticking-83775.mp3"></audio>
               <audio id="alarm"  src="./assets/sonidos/clock-alarm-8761 (mp3cut.net).mp3"></audio>
@@ -255,8 +258,8 @@
               <img class="cloudGame" alt="cloud display game board" src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/bubble-cloud_zn8adb.svg">
           </div>
           <div class="game-btn board-btns">
-              <button id="finish-btn">FINISH</button>
-              <button id="next-btn">NEXT</button>
+              <button class="btnSound" id="finish-btn">FINISH</button>
+              <button class="btnSound" id="next-btn">NEXT</button>
           </div>
       </container>
 
@@ -277,6 +280,7 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="/javascript/soundBtn.js"></script>
     <script type="module" src="/javascript/boardTimer.js"></script>
     <script type="module" src="/javascript/boardGame.js"></script>
     <script type="module" src="./javascript/list.js"></script>

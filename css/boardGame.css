@@ -16,17 +16,43 @@
         background-color: #000;
     }
 
+
+
     .cloudResult .cloudGame {
         padding-top: 1rem;
       }
 
     /* READY DISPLAY */
+
+    /* buton ready*/
+    .ready-btn {
+        animation: playShadow 1.6s ease-out infinite;
+        display: flex;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .ready-btn::after {
+        border-radius: 50%;
+        z-index: -1;
+        pointer-events: none;
+        transition: 0.35s;
+      }
+      @keyframes playShadow {
+        35% {
+          transform: scale(1.08);
+        }
+        76% {
+          transform: scale(0.96);
+        }
+      }
+
     .readyDisplay{
         display: flex;
         justify-content:center;
         align-items: center;
         flex-direction: column;
-        margin: 5rem 2rem 2rem 2rem;
+        margin: 2rem;
         height: 80vh;
         padding: 3rem;
         background-image: url('https://res.cloudinary.com/dcwt8jbja/image/upload/v1684268314/random/bk-blue-mobil_if9clv.svg');
@@ -51,13 +77,19 @@
         position: relative;
     }
 
+    .readyDisplay .cloudResult p {
+        width: 40%;
+
+    }
     .cloudResult p {
         position: absolute;
         padding-top: 1rem;
         transform: translate(-50%, -50%);
-        font-size: 1.3rem;
+        font-size: 1.rem;
         text-align: center;
+        width: 80%;
     }
+
 
     .ready-btn {
         background: none;
@@ -157,7 +189,7 @@
 
 /* Gameplay buttons styling - Mobile*/
 
-.timerGame button, .game-btn button, #startTimer {
+.game-btn button, #startTimer {
     width: 35%;
     font-family: "happy monkey";
     font-weight: 500;
