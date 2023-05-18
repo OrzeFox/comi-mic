@@ -18,6 +18,7 @@ let randomSelectionTimer; //efecto randomwords
 let selectionInterval = 90; //efecto randomwords
 const selectionTime = 1000; //efecto randomwords
 let stopSelectionTimeout; //efecto randomwords
+let rotation = 180; //btn next rotation
 
 // Ocultar challengeDisplay
 challengeDisplay.style.display = 'none';
@@ -85,21 +86,30 @@ btnFinish.addEventListener('click', () => {
   }, 1000);
 });
 
+//rotation for btn next
+function applyRotation() {
+  challengeDisplay.style.transform = `rotateY(${rotation}deg)`;
+  boardGame.style.transform = `rotateY(${rotation}deg)`;
+}
+
+function updateRotation() {
+  rotation += 180;
+  applyRotation();
+}
+
 // Btn "Next"
 btnNext.addEventListener('click', () => {
+  
   if (objectListGame.length === 0) {
     btnNext.disabled = true;
     resultGame.innerText = `"THE END!"`;
     return;
   }
 
+  updateRotation();
+
   clearInterval(randomSelectionTimer);
   clearTimeout(stopSelectionTimeout);
 
   startRandomSelection();
 });
-
-
-
-
-
