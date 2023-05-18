@@ -3,9 +3,11 @@ var timeLeft = 120; // 2 minutes in seconds
 var countdown;
 var startTimerButton = document.getElementById('startTimer');
 var audio = document.getElementById('audio'); 
-const btnFinish = document.querySelector('.game-btn button:nth-of-type(1)');
+const btnNext = document.querySelector('.game-btn button:nth-of-type(2)');
+
 
 function startTimer() {
+
     clearInterval(countdown);
 
     var minutes, seconds;
@@ -39,12 +41,18 @@ function startTimer() {
        }
     }, 1000); 
     timerElement.style.backgroundColor = ('rgba(157, 199, 5, 0.5)');
-
-}
+ }
 
 startTimerButton.addEventListener('click', function() {
     audio.play(); 
     startTimer();
 });
+
+btnNext.addEventListener('click', () => {
+    timeLeft = 120;
+    clearInterval(countdown);
+    timerElement.textContent = '02:00';
+    audio.pause();
+  });
 
 

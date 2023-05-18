@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 430px) {
 
     body{
         background-color: black;
@@ -17,7 +17,7 @@
     }
 
     .cloudResult .cloudGame {
-        padding-top: 6rem;
+        padding-top: 1rem;
       }
 
     /* READY DISPLAY */
@@ -53,9 +53,9 @@
 
     .cloudResult p {
         position: absolute;
-        padding-top: 6rem;
+        padding-top: 1rem;
         transform: translate(-50%, -50%);
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         text-align: center;
     }
 
@@ -173,7 +173,46 @@
     border: 1px solid black;
     color: black;
     margin-left: -7px;
+    padding: .3rem 0;
 }
+
+#startTimer {
+    width: 8rem;
+    padding: .5rem 0;
+    background-color: #9dc705;
+    color: #000;
+    border:1px solid #000;
+}
+#startTimer:hover {
+    background-color: #fff;
+    color:#9dc705;
+    border:1px solid #9dc705;
+}
+
+#finish-btn{
+    color: #000;
+    border:1px solid #000;
+    background-color: #f3655d;
+}
+#finish-btn:hover{
+    background-color: #fff;
+    color:#f3655d;
+    border: #f3655d solid 1px;
+}
+
+
+#next-btn {
+    color: #000;
+    border:1px solid #000;
+    background-color: #51cbf1;
+}
+#next-btn:hover {
+    background-color: #fff;
+    color: #51cbf1;
+    border: #51cbf1 1px solid;
+}
+
+
 
 /* Gameplay buttons - Desktop Styling */
 
