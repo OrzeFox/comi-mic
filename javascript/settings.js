@@ -26,6 +26,32 @@ window.onclick = function(event) {
   }
 }
 
+/* DESKTOP VERSION */
+
+
+// Get the button that opens the modal
+const btnSettings2 = document.getElementById("btn-settings-2");
+
+
+// When the user clicks on the button, open the modal
+btnSettings2.onclick = function() {
+  settingsModal.style.display = "block";
+}
+
+// When the user clicks on xmark, close the modal
+btnCloseSettings.onclick = function() {
+  settingsModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == settingsModal) {
+    settingsModal.style.display = "none";
+  }
+}
+
+
+
 /* TAB SWITCH */
 
 const btnSubject = document.getElementById("btn-subject")
