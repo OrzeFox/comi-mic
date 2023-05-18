@@ -3,11 +3,10 @@ var timeLeft = 120; // 2 minutes in seconds
 var countdown;
 var startTimerButton = document.getElementById('startTimer');
 var audio = document.getElementById('audio'); 
-
+const btnFinish = document.querySelector('.game-btn button:nth-of-type(1)');
 
 function startTimer() {
     clearInterval(countdown);
-    audio.play();
 
     var minutes, seconds;
     timeLeft = 120//if press start recount again from zero
@@ -40,7 +39,12 @@ function startTimer() {
        }
     }, 1000); 
     timerElement.style.backgroundColor = ('rgba(157, 199, 5, 0.5)');
-    
+
 }
 
-startTimerButton.addEventListener('click', startTimer);
+startTimerButton.addEventListener('click', function() {
+    audio.play(); 
+    startTimer();
+});
+
+

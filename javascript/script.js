@@ -88,33 +88,32 @@ const actions = [
 ];
 
 
-const btnPlay = document.getElementById("btnPlay");
-const resultGame = document.getElementById("resultGame");
+// const btnPlay = document.getElementById("btnPlay");
+// const resultGame = document.getElementById("resultGame");
 
-let objectListGame = objects;
-let actionListGame = actions;
+// let objectListGame = objects;
+// let actionListGame = actions;
 
-function starter() {
-  btnPlay.addEventListener("click", () => {
-    const randomIndex1 = Math.floor(Math.random() * objectListGame.length);
-    const randomObject = objectListGame[randomIndex1];
-    const randomIndex2 = Math.floor(Math.random() * actionListGame.length);
-    const randomAction = actionListGame[randomIndex2];
+// function starter() {
+//   btnPlay.addEventListener("click", () => {
+//     const randomIndex1 = Math.floor(Math.random() * objectListGame.length);
+//     const randomObject = objectListGame[randomIndex1];
+//     const randomIndex2 = Math.floor(Math.random() * actionListGame.length);
+//     const randomAction = actionListGame[randomIndex2];
 
-    resultGame.innerText = `You've got ${randomObject} and your action is ${randomAction}!`;
+//     resultGame.innerText = `You've got ${randomObject} and your action is ${randomAction}!`;
 
-    objectListGame.splice(randomIndex1, 1);
-    actionListGame.splice(randomIndex2, 1);
-    if (objectListGame.length === 0) {
-      btnPlay.disabled = true;
-      resultGame.innerText = `"THE END!"`;
-    }
-  });
-}
+//     objectListGame.splice(randomIndex1, 1);
+//     actionListGame.splice(randomIndex2, 1);
+//     if (objectListGame.length === 0) {
+//       btnPlay.disabled = true;
+//       resultGame.innerText = `"THE END!"`;
+//     }
+//   });
+// }
 
-starter();
-/* 
-btnRestart.addEventListener("click", () => {
-  location.reload();
-});
- */
+// starter();
+
+// btnRestart.addEventListener("click", () => {
+//   location.reload();
+// });
