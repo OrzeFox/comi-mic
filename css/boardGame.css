@@ -12,11 +12,25 @@
         margin:2rem 0;
     }
 
-    .boardGame {
-        background-color: #000;
+    /* .boardGame {
+        margin: 2rem;
+        height: 80vh;
+        border-radius: 20px;
+        transform-style: preserve-3d;
+        transition: all 0.8s ease;
     }
 
+    .boardGame:hover{
+        transform: rotateY(180deg);
+    }
 
+    .challengeDisplay {
+        transform: rotateY(180deg);
+    } */
+
+    .rotate {
+        transform: rotateY(180deg);
+      }
 
     .cloudResult .cloudGame {
         padding-top: 1rem;
