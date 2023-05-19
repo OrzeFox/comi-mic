@@ -179,27 +179,12 @@
 		overflow: hidden;
 	
 	}
-	.slideshow--item1{
-		
-		
 
-    }
-	.slideshow--item2{
-
-	}
 	.slideshow--item3{
 		object-fit: contain;
 		height: 400px;
 		}
-	.slideshow--item4{
-		
-	}
-	.slideshow--item5{
-		
-	}
-	.slideshow--item6{
-		
-	}
+
 	.img1{
 		padding-left: 100px;
 		padding-right: 100px;

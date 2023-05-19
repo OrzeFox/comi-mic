@@ -72,8 +72,7 @@ btnPlay.addEventListener('click', function() {
 // Btn "Finish"
 btnFinish.addEventListener('click', () => {
   readyDisplay.style.display = 'flex';
-  readyDisplay.style.justifyContent = 'center';
-  readyDisplay.style.alignItems = 'center';
+  readyDisplay.style.flexwrap = 'wrap';
   challengeDisplay.style.display = 'none';
 
   //transition
