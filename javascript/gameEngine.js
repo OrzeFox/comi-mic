@@ -87,33 +87,3 @@ const actions = [
   "Doing hockey",
 ];
 
-
-// const btnPlay = document.getElementById("btnPlay");
-// const resultGame = document.getElementById("resultGame");
-
-// let objectListGame = objects;
-// let actionListGame = actions;
-
-// function starter() {
-//   btnPlay.addEventListener("click", () => {
-//     const randomIndex1 = Math.floor(Math.random() * objectListGame.length);
-//     const randomObject = objectListGame[randomIndex1];
-//     const randomIndex2 = Math.floor(Math.random() * actionListGame.length);
-//     const randomAction = actionListGame[randomIndex2];
-
-//     resultGame.innerText = `You've got ${randomObject} and your action is ${randomAction}!`;
-
-//     objectListGame.splice(randomIndex1, 1);
-//     actionListGame.splice(randomIndex2, 1);
-//     if (objectListGame.length === 0) {
-//       btnPlay.disabled = true;
-//       resultGame.innerText = `"THE END!"`;
-//     }
-//   });
-// }
-
-// starter();
-
-// btnRestart.addEventListener("click", () => {
-//   location.reload();
-// });

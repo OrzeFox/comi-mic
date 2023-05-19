@@ -1,5 +1,5 @@
-import { objects } from './script.js';
-import { actions } from './script.js';
+import { objects } from './gameEngine.js';
+import { actions } from './gameEngine.js';
 
 
 // Elementos importantes

@@ -13,10 +13,10 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/ruleset.css">
-    <link rel="stylesheet" href="css/settings.css">
-    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/generalStyle.css">
+    <link rel="stylesheet" href="css/rulesetModal.css">
+    <link rel="stylesheet" href="css/settingsModal.css">
+    <link rel="stylesheet" href="css/mimicList.css">
     <link rel="stylesheet" href="css/boardGame.css">
     <link rel="stylesheet" href="css/slider.css">
     <!-- Preload Fonts -->
@@ -68,22 +68,23 @@
         </nav>
       </div> <!-- Closes the mobile navigation section -->
 
-    <!-- HEADER DESKTOP -->
-  <div class="nav-desktop">
-    <nav>
-      <a href="index.html" class="btn-logo"><img
-        class="logo-comimic"
-        src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/logo-comimic_bzzpo4.svg" alt="comimic logo">
-      </a>
-     <ul class="header-container navigation">
-        <li class="settings-btn">
-          <button type="button" id="btn-settings-2" class="btnSound" title="Settings">Settings</button>
-        </li>
-        <li class="ruleset-btn">
-          <button type="button" id="btn-ruleset-2" class="btnSound" title="Ruleset">Ruleset</button>
-        </li>
-      </ul>
-  </div>
+      <!-- HEADER DESKTOP -->
+    <div class="nav-desktop">
+      <nav>
+        <a href="index.html" id="btn-logo"><img
+          class="logo-comimic"
+          id="logo-comimic"
+          src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/logo-comimic_bzzpo4.svg" alt="logo-comimic"/>
+        </a>
+       <ul class="header-container navigation">
+          <li class="settings-btn">
+            <button type="button" id="btn-settings-2" class="btnSound" title="Settings">Settings</button>
+          </li>
+          <li class="ruleset-btn">
+            <button type="button" id="btn-ruleset-2" class="btnSound" title="Ruleset">Ruleset</button>
+          </li>
+        </ul>
+    </div>
 
     <!-- SECTION RULESET -->
       <div id="ruleset-modal" class="modal-ruleset">
@@ -253,7 +254,7 @@
           </div>
           <div class="cloudResult displayGame">
               <p id="resultGame"></p>
-              <img class="cloudGame" alt="cloud display game board" src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/bubble-cloud_zn8adb.svg">
+              <img class="cloudGame" alt="cloud display game board" src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/bubble-cloud_zn8adb.svg" >
           </div>
           <div class="game-btn board-btns">
               <button class="btnSound" id="finish-btn">Finish</button>
@@ -266,7 +267,7 @@
     <footer>
       <div class="foot-container">
         <div class="logo-footer">
-          <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/COMIMIC_xyzabi.svg" alt="comimic logo">
+          <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/COMIMIC_xyzabi.svg" alt="logo-comimic">
         </div>
         <div class="social-media">
           <a href="#"><i class="fab fa-twitter" title="twitter"></i></a>
@@ -278,13 +279,13 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="/javascript/soundBtn.js"></script>
-    <script type="module" src="/javascript/boardTimer.js"></script>
-    <script type="module" src="/javascript/boardGame.js"></script>
-    <script type="module" src="./javascript/list.js"></script>
-    <script type="module" src="./javascript/script.js"></script>
-    <script type="module" src="./javascript/settings.js"></script>
-    <script type="module" src="javascript/ruleset.js"></script>
-    <script type="module" src="/javascript/header.js"></script>
+    <script type="module" src="./javascript/soundBtn.js"></script>
+    <script type="module" src="./javascript/boardTimer.js"></script>
+    <script type="module" src="./javascript/boardGame.js"></script>
+    <script type="module" src="./javascript/mimicListUpdates.js"></script>
+    <script type="module" src="./javascript/gameEngine.js"></script>
+    <script type="module" src="./javascript/settingsModals.js"></script>
+    <script type="module" src="./javascript/rulesetModals.js"></script>
+    <script type="module" src="./javascript/headerMenu.js"></script>
   </body>
 </html>

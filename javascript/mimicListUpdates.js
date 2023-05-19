@@ -1,6 +1,6 @@
-import {objects} from './script.js'
+import {objects} from './gameEngine.js'
 
-import {actions} from './script.js'
+import {actions} from './gameEngine.js'
 
 
   const subjectInput = document.getElementById("subject-input"); // use getElementById to get the input element

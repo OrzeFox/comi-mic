@@ -2,7 +2,7 @@
 
 
 .slider{
-	background-image: url(https://res.cloudinary.com/dcwt8jbja/image/upload/v1684418413/bk-green-horizontal_jeu91x.svg);
+	background-image: url(https://res.cloudinary.com/dcwt8jbja/image/upload/v1684418413/bk-green-horizontal_jeu91x.svg) ;
 	background-size: cover;
 	height: 200px;
 	margin: 6rem 2rem 2rem 2rem;
@@ -36,7 +36,6 @@
 	overflow: hidden;
 	visibility: hidden;
 	padding-bottom: 50px;
-	
 }
 
 .slideshow--bullet:checked + .slideshow--item {
@@ -216,6 +215,7 @@
 		
 		width: 100%;
 		height: auto;
+		
 	}
 	.img2 img{
 		width: 340px;
