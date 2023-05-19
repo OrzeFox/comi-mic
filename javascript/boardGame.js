@@ -61,7 +61,7 @@ function stopRandomSelection() {
 // Evento "Ready"
 btnPlay.addEventListener('click', function() {
   readyDisplay.style.display = 'none';
-  challengeDisplay.style.display = 'block';
+  challengeDisplay.style.display = '';
   challengeDisplay.style.transform = 'rotateY(180deg)';
   boardGame.style.transition = 'all 0.8s ease';
   boardGame.style.transform = 'rotateY(180deg)';
