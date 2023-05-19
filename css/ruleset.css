@@ -59,6 +59,7 @@
     font-size: 0.9rem;
     text-align: justify;
     font-family: "happy monkey";
+    list-style-type: decimal;
   }
   
   .modal-content-ruleset li {
@@ -111,6 +112,7 @@
       font-size: 1.1rem;
       text-align: justify;
       font-family: "happy monkey";
+      list-style-type: decimal;
     }
     
     .modal-content-ruleset li {
