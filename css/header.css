@@ -6,13 +6,28 @@
   list-style: none;
 }
 @media (min-width: 469px) {
+
+  header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background: #ffce55;
+    display: flex;
+
+  }
+  .nav-desktop{
+    width: 100%;
+  }
   .nav-mobile {
     display: none;
   }
   .navigation-desk {
+    width: 100%;
     display: flex;
     align-items: center;
     color: black;
+
   }
   .navigation-desk a {
     font-family: "Bangers", sans-serif;
@@ -23,12 +38,16 @@
     background-color: #ffce55;
     height: 70px;
     justify-content: space-between;
+    width: 100%;
   }
   .header-container{
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 30%;
+justify-content: flex-end;
+align-items: center;
+gap: 2em;
+margin: 0 2em;
+
+    width: 100%;
   }
 
    /*        LOGO BUTTON    */
@@ -54,7 +73,7 @@
     padding: 2%;
     font-family: "Bangers", sans-serif;
     color: #222;
-    font-size: 34px;
+    font-size: 30px;
   }
   #btn-settings:hover, #btn-settings-2:hover {
     background: #ad882bd7;
@@ -69,7 +88,7 @@
     padding: 2%;
     font-family: "Bangers", sans-serif;
     color: #222;
-    font-size: 34px;
+    font-size: 30px;
   }
 
   #btn-ruleset:hover, #btn-ruleset-2:hover  {

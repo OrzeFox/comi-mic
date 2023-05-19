@@ -3,13 +3,13 @@
 
 .slider{
 	background-image: url(https://res.cloudinary.com/dcwt8jbja/image/upload/v1684418413/bk-green-horizontal_jeu91x.svg);
-	background-size: 100%;
+	background-size: cover;
 	height: 200px;
 	margin: 6rem 2rem 2rem 2rem;
 	background-repeat:no-repeat;
 	padding-bottom: 500px;
 	padding-top: 25px;
-	border-radius: 100px;
+	border-radius: 50px;
 	box-shadow:10px,10px,10px,10px,#333;
 	background-position:center ;
 }

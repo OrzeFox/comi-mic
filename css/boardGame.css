@@ -297,6 +297,7 @@ height: 32em;
 .readyDisplay{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     margin: 2rem;
     height: 80vh;
     padding: 3rem;
