@@ -9,8 +9,7 @@
     <!-- Social media footer -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -40,154 +39,153 @@
     <title>Comimic</title>
   </head>
   <audio id="buttonSound">
-    <source id="buttonSound" src="/assets/sonidos/mixkit-arcade-game-jump-coin-216.wav" type="audio/mpeg">
+    <source src="/assets/sonidos/mixkit-arcade-game-jump-coin-216.wav" type="audio/mpeg">
   </audio>
 
+  <body>
+    
   <header class="main panel red">
-      <!-- <div class="nav"> --> <!-- we can delete this div maybe -->
+    <!-- <div class="nav"> --> <!-- we can delete this div maybe -->
 
-        <!-- HEADER MOBILE -->
-        <div class="nav-mobile">   
-          <a href="index.html" id="btn-logo"><img
-            class="logo-comimic"
-            id="logo-comimic"
-            src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/logo-comimic_bzzpo4.svg" alt="logo"/>
-          </a>
-          <button for="btn-nav" class="hamb-btn btnSound">
-            <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684248988/random/btn-hamb_spoto8.svg" alt="menu">
-          </button>
-          <nav class="header-nav" id="header-nav">
-            <ul class="header-container navigation">
-              <li class="settings-btn">
-                <button type="button" id="btn-settings" class="btnSound" title="Settings">Settings</button>
-              </li>
-              <li class="ruleset-btn">
-                <button type="button" id="btn-ruleset" class="btnSound" title="Ruleset">Ruleset</button>
-              </li>
-            </ul>
-          </nav>
-        </div> <!-- Closes the mobile navigation section -->
-
-      <!-- HEADER DESKTOP -->
-    <div class="nav-desktop">
-      <nav>
-        <a href="index.html" id="btn-logo"><img
+      <!-- HEADER MOBILE -->
+      <div class="nav-mobile">   
+        <a href="index.html" class="btn-logo"><img
           class="logo-comimic"
-          id="logo-comimic"
-          src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/logo-comimic_bzzpo4.svg" alt="logo"/>
+          src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/logo-comimic_bzzpo4.svg" alt="comimic logo">
         </a>
-       <ul class="header-container navigation">
-          <li class="settings-btn">
-            <button type="button" id="btn-settings-2" class="btnSound" title="Settings">Settings</button>
-          </li>
-          <li class="ruleset-btn">
-            <button type="button" id="btn-ruleset-2" class="btnSound" title="Ruleset">Ruleset</button>
-          </li>
-        </ul>
-    </div>
+        <button class="hamb-btn btnSound">
+          <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684248988/random/btn-hamb_spoto8.svg" alt="menu icon">
+        </button>
+        <nav class="header-nav" id="header-nav">
+          <ul class="header-container navigation">
+            <li class="settings-btn">
+              <button type="button" id="btn-settings" class="btnSound" title="Settings">Settings</button>
+            </li>
+            <li class="ruleset-btn">
+              <button type="button" id="btn-ruleset" class="btnSound" title="Ruleset">Ruleset</button>
+            </li>
+          </ul>
+        </nav>
+      </div> <!-- Closes the mobile navigation section -->
 
-      <!-- SECTION RULESET -->
-        <div id="ruleset-modal" class="modal-ruleset">
-          <div class="modal-content-ruleset">        
-            <i class="fa-solid fa-xmark fa-md close-ruleset" style="color: #000000;"></i>
-          <h1>ABOUT THE GAME</h1>
-          <p>You have to do an action while imitating an animal, a person or an object that are generated randomly as pairings while other players try to guess both of the words! </p>
-          <h1>RULESET</h1>
+    <!-- HEADER DESKTOP -->
+  <div class="nav-desktop">
+    <nav>
+      <a href="index.html" class="btn-logo"><img
+        class="logo-comimic"
+        src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/logo-comimic_bzzpo4.svg" alt="comimic logo">
+      </a>
+     <ul class="header-container navigation">
+        <li class="settings-btn">
+          <button type="button" id="btn-settings-2" class="btnSound" title="Settings">Settings</button>
+        </li>
+        <li class="ruleset-btn">
+          <button type="button" id="btn-ruleset-2" class="btnSound" title="Ruleset">Ruleset</button>
+        </li>
+      </ul>
+  </div>
+
+    <!-- SECTION RULESET -->
+      <div id="ruleset-modal" class="modal-ruleset">
+        <div class="modal-content-ruleset">        
+          <i class="fa-solid fa-xmark fa-md close-ruleset" style="color: #000000;"></i>
+        <h1>ABOUT THE GAME</h1>
+        <p>You have to do an action while imitating an animal, a person or an object that are generated randomly as pairings while other players try to guess both of the words! </p>
+        <h1>RULESET</h1>
+          <ol>
+            <li>The player who is doing the challenge can see the word pairing.</li>
+            <li>The player has to do the action while imitating the subject, it is not allowed to do the imitation and the action separately.</li>
+            <li>The guessing players have to say both the subject and the action to make a correct guess.</li>
+            <li>The playing order can be decided among the players.</li>
+          </ol>
+         </div> 
+      </div>
+
+      <!-- SECTION SETTINGS -->
+
+        <!-- THE MODAL -->
+        <div id="settings-modal" class="modal">
+          <!-- THE MODAL CONTENT -->
+          <div class="modal-content">        
+              <i class="fa-solid fa-xmark fa-md close-settings" style="color: #000000;"></i>
+            <h2>Settings</h2>
             <ol>
-              <li>The player who is doing the challenge can see the word pairing.</li>
-              <li>The player has to do the action while imitating the subject, it is not allowed to do the imitation and the action separately.</li>
-              <li>The guessing players have to say both the subject and the action to make a correct guess.</li>
-              <li>The playing order can be decided among the players.</li>
+              <li>
+                You can see the available subjects and actions that are
+                currently available in the game in their respective tabs.
+              </li>
+              <li>
+                You can add your own words to the game by typing them into the
+                box and pressing the submit button.
+              </li>
+              <li>
+                You can remove the items in the list by clicking on the word
+                you wish to remove.
+              </li>
             </ol>
-           </div> 
-        </div>
 
-        <!-- SECTION SETTINGS -->
+            <!-- TAB BUTTONS -->
+            <div class="setting-tabs">
+              <div class="setting-btns">
+                <button id="btn-subject" class="tab-title active btnSound">Subject</button>
+                <button id="btn-action" class="tab-title btnSound">Action</button>
+              </div>
 
-          <!-- THE MODAL -->
-          <div id="settings-modal" class="modal">
-            <!-- THE MODAL CONTENT -->
-            <div class="modal-content">        
-                <i class="fa-solid fa-xmark fa-md close-settings" style="color: #000000;"></i>
-              <h2>Settings</h2>
-              <ol>
-                <li>
-                  You can see the available subjects and actions that are
-                  currently available in the game in their respective tabs.
-                </li>
-                <li>
-                  You can add your own words to the game by typing them into the
-                  box and pressing the submit button.
-                </li>
-                <li>
-                  You can remove the items in the list by clicking on the word
-                  you wish to remove.
-                </li>
-              </ol>
-
-              <!-- TAB BUTTONS -->
-              <div class="setting-tabs">
-                <div class="setting-btns">
-                  <button id="btn-subject" class="tab-title active btnSound">Subject</button>
-                  <button id="btn-action" class="tab-title btnSound">Action</button>
+              <!-- SUBJECT TAB CONTENT -->
+              <div class="tab-container">
+                <div id="tab-subject" class="tab-content active">
+                    <h1>Subject List</h1>
+                  <form class="form">
+                      <label class="subject-form_label" for="subject-input"></label>
+                      <input class="subject-input" type="text" id="subject-input" name="subject-input-name" required>
+                      <button id="submit-subject" class="button btnSound">Submit</button> 
+                  </form>
+                    <ul class="subject-list"></ul>
                 </div>
 
-                <!-- SUBJECT TAB CONTENT -->
-                <div class="tab-container">
-                  <div id="tab-subject" class="tab-content active">
-                      <h1>Subject List</h1>
-                    <form class="form">
-                        <label class="subject-form_label" for="subject-input"></label>
-                        <input class="subject-input" type="text" id="subject-input" name="subject-input-name" required>
-                        <button id="submit-subject" class="button btnSound">Submit</button> 
-                    </form>
-                      <ul class="subject-list"></ul>
-                  </div>
-
-                  <!-- ACTION CONTENT -->
-                  <div id="tab-action" class="tab-content">
-                      <h1>Action List</h1>
-                    <form class="form">
-                        <label class="form_label" for="action-input"></label>
-                        <input class="form_input" type="text" id="action-input" name="action-input-name" required>
-                        <button id="submit-action" class="button btnSound">Submit</button>
-                    </form>
-                      <ul class="action-list"></ul>
-                  </div> <!-- closing action tab tag -->
-                </div> <!-- closing tab container tag -->
-              </div>  <!-- closing setting tab tag -->
-            </div> <!-- closing modal content tag -->
-          </div> <!-- closing settings modal tag -->
-    </nav>
-  </header>
-  <body>
+                <!-- ACTION CONTENT -->
+                <div id="tab-action" class="tab-content">
+                    <h1>Action List</h1>
+                  <form class="form">
+                      <label class="form_label" for="action-input"></label>
+                      <input class="form_input" type="text" id="action-input" name="action-input-name" required>
+                      <button id="submit-action" class="button btnSound">Submit</button>
+                  </form>
+                    <ul class="action-list"></ul>
+                </div> <!-- closing action tab tag -->
+              </div> <!-- closing tab container tag -->
+            </div>  <!-- closing setting tab tag -->
+          </div> <!-- closing modal content tag -->
+        </div> <!-- closing settings modal tag -->
+  </nav>
+</header>
     <!-- INSTRUCTIONS SLIDER -->
     <section class="slider">
       <div class="slideshow-container">
        <div class="slideshow" data-transition="fade">
-                  <input type="radio" name="ss2" id="ss2-item-1" class="slideshow--bullet" checked="checked" />
+                  <input type="radio" name="ss2" id="ss2-item-1" class="slideshow--bullet" checked="checked">
                   <div class="slideshow--item slideshow--item1" >
                       <div class="img1">
-                          <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684251726/random/img%20comic/01start_ljzbkq.svg" alt="image1">
+                          <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684251726/random/img%20comic/01start_ljzbkq.svg" alt="instruction1">
                       </div>
                       
                       <label for="ss2-item-6" class="slideshow--nav slideshow--nav-previous">Go to slide 6</label>
                       <label for="ss2-item-2" class="slideshow--nav slideshow--nav-next">Go to slide 2</label>
                   </div>
               
-                  <input type="radio" name="ss2" id="ss2-item-2" class="slideshow--bullet" />
+                  <input type="radio" name="ss2" id="ss2-item-2" class="slideshow--bullet">
                   <div class="slideshow--item slideshow--item2">
                       <div class="img2">
-                      <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684251726/random/img%20comic/02_yxluif.svg" alt="image2">
+                      <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684251726/random/img%20comic/02_yxluif.svg" alt="instruction2">
                       </div>
                       <label for="ss2-item-1" class="slideshow--nav slideshow--nav-previous">Go to slide 1</label>
                       <label for="ss2-item-3" class="slideshow--nav slideshow--nav-next">Go to slide 3</label>
                   </div>
               
-                  <input type="radio" name="ss2" id="ss2-item-3" class="slideshow--bullet" />
+                  <input type="radio" name="ss2" id="ss2-item-3" class="slideshow--bullet">
                   <div class="slideshow--item slideshow--item3 ">
                       <div class="img3">
-                      <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684251726/random/img%20comic/03_vmjcg4.svg" alt="image3">
+                      <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684251726/random/img%20comic/03_vmjcg4.svg" alt="instruction3">
                       </div>
                       
                       <label for="ss2-item-2" class="slideshow--nav slideshow--nav-previous">Go to slide 2</label>
@@ -197,7 +195,7 @@
                   <input type="radio" name="ss2" id="ss2-item-4" class="slideshow--bullet">
                   <div class="slideshow--item slideshow--item4">
                       <div class="img4">
-                      <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684251726/random/img%20comic/04_kr63bu.svg" alt="image4">
+                      <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684251726/random/img%20comic/04_kr63bu.svg" alt="instruction4">
                       </div>
                       
                       <label for="ss2-item-3" class="slideshow--nav slideshow--nav-previous">Go to slide 3</label>
@@ -207,17 +205,17 @@
                   <input type="radio" name="ss2" id="ss2-item-5" class="slideshow--bullet">
                   <div class="slideshow--item slideshow--item5 ">
                       <div class="img5">
-                      <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684251726/random/img%20comic/05_gqghys.svg" alt="image5">
+                      <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684251726/random/img%20comic/05_gqghys.svg" alt="instruction5">
                       </div>
                       
                       <label for="ss2-item-4" class="slideshow--nav slideshow--nav-previous">Go to slide 4</label>
                       <label for="ss2-item-6" class="slideshow--nav slideshow--nav-next">Go to slide 6</label>
                   </div>
   
-                  <input type="radio" name="ss2" id="ss2-item-6" class="slideshow--bullet" />
+                  <input type="radio" name="ss2" id="ss2-item-6" class="slideshow--bullet">
                   <div class="slideshow--item slideshow--item6">
                       <div class="img6">
-                      <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684251726/random/img%20comic/06_dcsshm.svg" alt="image6">
+                      <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684251726/random/img%20comic/06_dcsshm.svg" alt="instruction6">
                       </div>
                       <label for="ss2-item-5" class="slideshow--nav slideshow--nav-previous">Go to slide 5</label>
                       <label for="ss2-item-1" class="slideshow--nav slideshow--nav-next">Go to slide 1</label>
@@ -231,7 +229,7 @@
     <section class="boardGame">
 
       <!-- READY DISPLAY -->
-      <container class="readyDisplay displayGame">
+      <div class="readyDisplay displayGame">
           <h2><spam id="lets-txt">LET'S</spam><br>
               <spam id="play-txt">PLAY!</spam></h2> 
 
@@ -240,10 +238,10 @@
               <img class="cloudGame" alt="cloud display game board" src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/bubble-cloud_zn8adb.svg">
           </div>
           <button id="btnPlay" class="ready-btn btnSound"><img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/ready-btn_syaytk.svg" alt="already button"></button>
-      </container>
+      </div>
 
       <!-- CHALLENGE DISPLAY -->
-      <container class="challengeDisplay">
+      <div class="challengeDisplay">
           <!-- TIMER -->
           <div class="timerGame">
               <div class="timer" id="timer">02:00</div>
@@ -261,14 +259,14 @@
               <button class="btnSound" id="finish-btn">Finish</button>
               <button class="btnSound" id="next-btn">Next</button>
           </div>
-      </container>
+      </div>
 
   </section>
     <!------------ FOOTER----------->
     <footer>
       <div class="foot-container">
         <div class="logo-footer">
-          <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/COMIMIC_xyzabi.svg">
+          <img src="https://res.cloudinary.com/dcwt8jbja/image/upload/v1684164814/random/icons/COMIMIC_xyzabi.svg" alt="comimic logo">
         </div>
         <div class="social-media">
           <a href="#"><i class="fab fa-twitter" title="twitter"></i></a>
