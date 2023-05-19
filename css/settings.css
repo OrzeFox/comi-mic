@@ -41,7 +41,6 @@
   }
 
   .modal-content ol {
-    text-overflow: wrap;
     margin-left: 20px;
     padding: 5px;
     margin-bottom: 10px;
@@ -91,7 +90,6 @@
     display: block;
     width: 100%;
     background-color: inherit;
-    float: center;
     border: none;
     outline: none;
     cursor: pointer;
@@ -218,7 +216,6 @@
     }
   
     .modal-content ol {
-      text-overflow: wrap;
       margin-left: 20px;
       padding: 5px;
       margin-bottom: 10px;
