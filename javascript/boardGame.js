@@ -51,7 +51,7 @@ function stopRandomSelection() {
   objectListGame.splice(randomIndex1, 1);
   actionListGame.splice(randomIndex2, 1);
 
-  if (objectListGame.length === 0) {
+  if (actionListGame.length < 0 || objectListGame.length < 0) {
     btnNext.disabled = true;
     resultGame.innerText = `"THE END!"`;
   }
