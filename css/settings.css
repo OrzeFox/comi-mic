@@ -127,7 +127,7 @@
     display: none;
     padding: 6px 12px;
     width: 100%;
-    height: 240px;
+    height: 250px;
     border-top: 1px solid;
   }
 
@@ -201,16 +201,16 @@
   /* BIGGER SCREEN STYLING */
 
   @media only screen and (min-width: 431px) {
+    
     .modal-content {
       max-width: 600px;
       background-color: #fefefe;
-      margin: 7% auto; 
+      margin: 2% auto; 
       padding: 2rem;
       border: 2px solid black;
         }
   
     .modal-content h2 {
-      font-size: 3.7rem;
       font-size: 3.7rem;
       font-family: "bangers";
       margin-bottom: 10px;
@@ -223,13 +223,14 @@
       padding: 5px;
       margin-bottom: 10px;
       line-height: 1.2;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       text-align: justify;
       font-family: "happy monkey";
     }
     
     .modal-content li {
       margin-bottom: 10px;
+ 
   
     }
     /* The Close Button */
@@ -264,13 +265,13 @@
   
   .setting-btns button {
     font-family: "bangers";
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   
   
     .tab-container h1, .tab-container h1 {
       font-family: "bangers";
-      font-size: 2.2rem;
+      font-size: 2rem;
       letter-spacing: 1px;
       margin-bottom: 15px;
       margin-top: 10px;
@@ -287,16 +288,16 @@
       margin-right: 30px;
       font-family: "happy monkey";
       height: 2rem;
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
     
     #submit-subject, #submit-action {
       width: 30%;
       font-family: "happy monkey";
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       font-weight: 500;
       letter-spacing: 1px;
-      height: 2rem;
+      height: 2.1rem;
       transition: all 0.3s ease;
       position: relative;
       display: inline-block;

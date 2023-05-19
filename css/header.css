@@ -56,11 +56,11 @@ margin: 0 2em;
     width: 15%;
     justify-content: space-around;
    }
-   #btn-logo {
+   .btn-logo {
     display: flex;
     width: 10%;
   }
-  #btn-logo:hover {
+  .btn-logo:hover {
     background: #ad882bd7;
   }
 
@@ -152,11 +152,11 @@ margin: 0 2em;
   }
 
   /*        LOGO BUTTON    */
-  #btn-logo {
+  .btn-logo {
     display: flex;
     width: 25%;
   }
-  #btn-logo:hover {
+  .btn-logo:hover {
     background: #ad882bd7;
   }
 
