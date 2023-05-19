@@ -5,28 +5,12 @@
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 431px) {
 
     body{
         background-color: black;
-        margin:2rem 0;
     }
 
-    /* .boardGame {
-        margin: 2rem;
-        height: 80vh;
-        border-radius: 20px;
-        transform-style: preserve-3d;
-        transition: all 0.8s ease;
-    }
-
-    .boardGame:hover{
-        transform: rotateY(180deg);
-    }
-
-    .challengeDisplay {
-        transform: rotateY(180deg);
-    } */
 
     .rotate {
         transform: rotateY(180deg);
@@ -99,7 +83,7 @@
         position: absolute;
         padding-top: 1rem;
         transform: translate(-50%, -50%);
-        font-size: 1.rem;
+        font-size: 1rem;
         text-align: center;
         width: 80%;
     }
@@ -264,22 +248,211 @@
 
 @media only screen and (min-width: 431px) {
 
-.timerGame button, .game-btn button, #startTimer {
-    width: 30%;
-    font-family: "happy monkey";
-    font-size: 1.3rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-    height: 2rem;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;
-    z-index: 0;
-    background: #fff;
-    overflow: hidden;
-    border: 2px solid black;
-    color: black;
+    body{
+        background-color: black;
+    }
+
+
+
+.rotate {
+    transform: rotateY(180deg);
   }
+
+.cloudGame{
+height: 32em;
+
+    z-index: 0;
+}
+
+/* .cloudResult .cloudGame {
+    padding-top: 1rem;
+  } */
+
+/* READY DISPLAY */
+
+/* buton ready*/
+.ready-btn {
+    animation: playShadow 1.6s ease-out infinite;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    align-self: flex-end;
+  }
+
+  .ready-btn::after {
+    border-radius: 50%;
+    z-index: -1;
+    pointer-events: none;
+    transition: 0.35s;
+  }
+  @keyframes playShadow {
+    35% {
+      transform: scale(1.08);
+    }
+    76% {
+      transform: scale(0.96);
+    }
+  }
+
+.readyDisplay{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    height: 80vh;
+    padding: 3rem;
+    background-image: url('https://res.cloudinary.com/dcwt8jbja/image/upload/v1684306691/random/backgroundblue_6_aexony.svg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+}
+
+.boardGame .readyDisplay h2 {
+    font-family: 'Bangers', sans-serif;
+    color:#ffce55;
+    text-shadow: 3px 3px#222;
+    font-size: 3rem;
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+    margin: 0 0;
+}
+
+#play-txt {
+    font-size: 3.5rem;
+    position: relative;
+}
+
+.cloudResult {
+    position: relative;
+}
+
+.readyDisplay .cloudResult p {
+    width: 40%;
+
+
+}
+.cloudResult p {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 15rem;
+    text-align: justify;
+    width: 35%;
+    z-index: 5;
+    letter-spacing: 0.141em;
+
+}
+.cloudResult span{
+    font-family: bangers;
+}
+
+
+.ready-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+
+/* CHALLENGE DISPLAY */
+ .challengeDisplay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: 2rem ;
+    max-width: 1440px;
+    height: 80vh;
+    padding: 3rem;
+    position: relative;
+    background-image: url('https://res.cloudinary.com/dcwt8jbja/image/upload/v1684306691/random/backgroundblue_6_aexony.svg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+}
+
+.cloudResult{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.cloudResult p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.game-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:30rem;
+    z-index: 6;
+}
+
+/* TIMER */
+.timerGame{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    top: 4rem;
+    gap: 1rem;
+}
+
+.timer{
+    text-align:center;
+    font-family:Bangers;
+    color:#222;
+    font-size:2rem;
+    letter-spacing:2px;
+    animation: wiggle 1s infinite;
+    padding: .5rem 3rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+}
+
+.timer:hover {
+    animation: none;}
+
+
+
+
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+25% { transform: rotate(3deg); }
+50% { transform: rotate(0deg); }
+75% { transform: rotate(-3deg); }
+100% { transform: rotate(0deg); }
+}
+
+
+
+/* Gameplay buttons styling - Desktop*/
+
+.game-btn button, #startTimer {
+width: 20%;
+font-family: "happy monkey";
+font-weight: 500;
+letter-spacing: 3px;
+transition: all 0.3s ease;
+border-radius: 50px;
+border: 1px solid black;
+color: black;
+height: 40px;
+font-size: 1.3rem;
+padding: 0;
+margin: 0 0.4em;
+}
+#startTimer{
+    width: 21%;
+}
 }
