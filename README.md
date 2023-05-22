@@ -28,7 +28,7 @@ Ruleset Modal:
 
 ## Installation
 
-No installation is required to use Comimic as it is a web page. Simply access the following URL: [URL of your web page] and you can start enjoying the charades game right away.
+No installation is required to use Comimic as it is a web page. Simply access the following URL: [(https://orzefox.github.io/comi-mic/)] and you can start enjoying the charades game right away.
 
 ## Usage
 
