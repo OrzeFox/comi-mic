@@ -35,7 +35,7 @@ No installation is required to use Comimic as it is a web page. Simply access th
 1. Open your web browser and go [(https://orzefox.github.io/comi-mic/)].
 2. Read the game instructions to familiarize yourself with the rules and recommendations.
 3. Click the "Ready?" button to get a random charades challenge.
-4. Act out the word, phrase, or situation displayed on the screen without using words.
+4. Act out the action, imitating the subject displayed on the screen.
 5. Other players will try to guess what you are representing.
 6. Have fun and enjoy the charades experience with Comimic!
 
