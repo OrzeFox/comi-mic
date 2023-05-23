@@ -1,0 +1,34 @@
+/*===========================
+START // General Page/Layout
+============================*/
+@import url(//fonts.googleapis.com/css?family=Patrick+Hand+SC|Bangers|Happy+Monkey);
+/* LAYOUT */
+.whole-container {
+  width: 100%;
+  height: auto;
+  margin: -10px;
+}
+
+/* TYPOGRAPHY */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", sans-serif;
+  color: #222;
+}
+
+p,
+ul,
+li,
+ol {
+  font-family: "Happy Monkey", cursive;
+  color: #222;
+}
+
+
+
+
+
+

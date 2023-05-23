@@ -1,0 +1,132 @@
+@import url(//fonts.googleapis.com/css?family=Patrick+Hand+SC|Bangers|Happy+Monkey);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* The Modal (background) */
+.modal-ruleset {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content-ruleset {
+    width: 80vw;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+
+  .modal-content-ruleset h1 {
+    font-size: 2.4rem;
+    font-family: "bangers";
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    text-shadow: 3px 3px #fa9939;
+    text-align: center;
+    
+  }
+
+  .modal-content-ruleset h1:nth-child(2) {
+    text-shadow: 3px 3px #f03485;
+  }
+
+  .modal-content-ruleset p {
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .modal-content-ruleset ol {
+    margin-left: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    font-size: 0.9rem;
+    text-align: justify;
+    font-family: "happy monkey";
+  }
+  
+  .modal-content-ruleset li {
+    margin-bottom: 5px;
+    list-style-type: decimal;
+    
+
+  }
+  /* The Close Button */
+  .fa-xmark {
+    float: right;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+
+  /* BIGGER SCREEN STYLING */
+
+  @media only screen and (min-width: 431px) {
+    .modal-content-ruleset {
+      max-width: 600px;
+      height: 650px;
+      background-color: #fefefe;
+      margin: 2% auto; 
+      padding: 2rem;
+      border: 2px solid black;
+    }
+  
+    .modal-content-ruleset h1 {
+      margin-top: 30px;
+      font-size: 3.7rem;
+      font-family: "bangers";
+      margin-bottom: 20px;
+      margin-left: 5px;
+    }
+
+    .modal-content-ruleset p {
+        text-align: justify;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+        padding: 5px;
+      }
+  
+    .modal-content-ruleset ol {
+      margin-left: 20px;
+      padding: 5px;
+      margin-bottom: 10px;
+      line-height: 1.2;
+      font-size: 1.2rem;
+      text-align: justify;
+      font-family: "happy monkey";
+    }
+    
+    .modal-content-ruleset li {
+      margin-bottom: 10px;
+  
+    }
+
+    /* The Close Button */
+    .close-x {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+   
+  .fa-xmark {
+    font-size: 2rem;
+  }
+ }
